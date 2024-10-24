@@ -1,0 +1,1396 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* header  */
+
+/* nav link  */
+
+/* Base link style */
+.nav-link {
+  color: #333; /* Default link color */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Active link style */
+.nav-link.active {
+  color: #f30101; /* Active link color */
+}
+
+/* Hover effect for active links only */
+.nav-link.active:hover {
+  color: #f30101; /* Change color when hovering over active link */
+  text-decoration: underline; /* Optional hover underline */
+}
+
+
+
+
+
+/* Main Header */
+.main-header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #afacac;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Middle Bar */
+.middle-bar {
+  text-align: center;
+  padding: 30px;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* Logo and Navigation */
+.logo-and-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #000000;
+  position: relative;
+}
+
+/* Centering the logo and navigation */
+.logo-and-nav .logo,
+.logo-and-nav .main-nav,
+.logo-and-nav .icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Center the content */
+.logo-and-nav {
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  flex: 1;
+  text-align: center;
+  /* Ensure the logo is centered */
+}
+
+.logo img {
+  max-width: 115px;
+  /* Adjust width as needed */
+  height: 60px;
+  display: block;
+  margin: 10px 5px auto;
+  /* Centers the logo image */
+  margin-left: 50%;
+}
+
+/* Heading for Spider Clothing */
+.logo h1 {
+  font-size: 30px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.logo h1 span {
+  font-weight: normal;
+  font-size: 14px;
+  /* Adjust font size for span text */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: -7px;
+  /* Adds space between the 'Spider' and 'Clothing' */
+  color: #666;
+  /* Set a lighter color for the span */
+}
+
+/* Navigation Menu */
+.main-nav {
+  flex: 2;
+  /* More space for centering the nav */
+  justify-content: center;
+  padding: 15px;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.main-nav ul li {
+  margin: 0 20px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #030303;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #5555;
+}
+
+/* Icons Section */
+.icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #3a3232;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #5555;
+}
+
+/* Font Awesome Icons */
+.icons i {
+  font-size: 17px;
+}
+
+
+
+
+
+
+/* hero section  */
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #fff;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Hero Text */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+  margin-top: -50px;
+  margin-bottom: 26px;
+}
+
+.hero-text {
+  width: 30%;
+  padding-right: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 530;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 45px;
+  line-height: 28px;
+}
+
+.shop-now-btn {
+  padding: 18px 48px;
+  background-color: black;
+  font-size: 12px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none; /* Removes the underline */
+}
+
+.shop-now-btn:hover {
+  background-color: #333;
+}
+
+
+/* Hero Image */
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  max-width: 107%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/* banner section  */
+
+.moveable {
+  background-color: #f9f9f9;
+  padding: 15px 0;
+  overflow: hidden;
+  /* Ensure the content doesn't overflow */
+  white-space: nowrap;
+  /* Prevent the text from wrapping to the next line */
+  border-top: 1px solid #000;
+  margin-top: -76px;
+}
+
+.moveable span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 200;
+  color: #181616;
+  animation: slide 15s linear infinite;
+  padding-right: 50px;
+  /* Adds space between each sentence */
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+
+}
+
+
+.collection-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px;
+  border-top: 2px solid #000;
+  /* Black line on top */
+  border-bottom: 1px solid #000;
+  /* Black line on bottom */
+}
+
+/* .box {
+  width: 35%;
+  display: block;
+} */
+
+.box {
+  width: 35%; 
+  display: block; 
+  position: relative; 
+  overflow: hidden; 
+  transition: background-color 0.3s ease; /* Smooth background color change */
+  background-color: transparent; 
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.box:hover {
+  background-color: rgba(7, 7, 7, 0.5); /* Change to desired background color (e.g., black with 50% opacity) */
+}
+
+.box:hover img {
+  opacity: 0.2; /* Slightly fade the image to blend with the background */
+}
+
+.collection-section .box:nth-child(2) img {
+  border-left: 2px solid #000;
+  /* Left border */
+  border-right: 2px solid #000;
+  /* Right border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .collection-section {
+      flex-direction: column;
+      padding: 0 20px;
+  }
+
+  .box {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/* products collection  */
+
+.new-clothes {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.new-clothes h2 {
+  font-size: 28px;
+  font-weight: 550;
+  color: #000000;
+}
+
+/* Product Slider */
+.product-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  /* border-top: 1px solid #eaeaea; */
+  /* border-bottom: 1px solid #eaeaea; */
+  padding: 0px;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: max-content;
+}
+
+.next:hover{
+  background-color: #333;
+}
+.prev:hover {
+  background-color: #333;
+}
+
+.product-box {
+  width: 325px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  border: 1px solid #c2c0c0;
+  overflow: hidden;
+  transition: border 0.3s;
+}
+
+.product-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Favorite Icon */
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  /* Smooth transition for color */
+}
+
+/* Product Info */
+.product-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+.product-info .pak {
+  font-size: 12px;
+  font-weight: 200;
+  margin-bottom: 15px;
+  color: #757272;
+}
+
+.product-info h3 {
+  font-size: 13px;
+  font-weight: 200;
+  color: #494848;
+  margin-bottom: 7px;
+}
+
+.product-info:hover .pak {
+  color: #d64f4f; 
+}
+
+.product-info .price {
+  font-size: 12px;
+  font-weight: 200;
+  color: #757272;
+  margin-bottom: 5px;
+}
+
+.product-info .price span {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.product-info .discount {
+  color: red;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid red;
+  padding: 2px 5px;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+/* Product Action Buttons */
+.product-action {
+  visibility: hidden;
+  /* Initially hidden */
+  opacity: 0;
+  /* Initially invisible */
+  transition: opacity 0.3s;
+  /* Smooth transition for visibility */
+}
+
+.product-box:hover {
+  border: 1px solid #000;
+  /* Show border on hover */
+}
+
+.product-box:hover .product-action {
+  visibility: visible;
+  /* Show buttons on hover */
+  opacity: 1;
+  /* Make buttons visible */
+}
+
+.product-box:hover .favorite-icon {
+  visibility: visible;
+  /* Show favorite icon on hover */
+}
+
+/* Action Buttons */
+.product-action button {
+  padding: 12px 30px;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.product-action button:hover {
+  color: #fff;
+  background-color: #222020;
+}
+
+/* Carousel Navigation Buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Hide slider arrows when not hovering */
+.prev,
+.next {
+  visibility: hidden;
+}
+
+.product-slider:hover .prev,
+.product-slider:hover .next {
+  visibility: visible;
+}
+
+
+
+
+
+/* all products  */
+
+/* Container for products */
+/* .product-container {
+  display: flex;
+  flex-direction: row; 
+  overflow-x: auto; 
+  white-space: nowrap; 
+  padding: 20px;
+} */
+
+
+/* .product-container::-webkit-scrollbar {
+  display: none; 
+} */
+
+/* .product-container {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+} */
+
+/* Individual product box */
+.products {
+  width: 261px; /* Adjust to your preferred size */
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  border: 1px solid #c2c0c0;
+  overflow: hidden;
+  transition: border 0.3s;
+  display: inline-block; 
+  margin: -3px ;
+  white-space: normal;
+}
+
+/* Product Image */
+.products img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  margin-top: 25px;
+}
+
+.favorite {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  /* Smooth transition for color */
+}
+
+/* Product Info */
+.info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.info .pak {
+  font-size: 12px;
+  font-weight: 200;
+  margin-bottom: 15px;
+  color: #757272;
+}
+
+.info h3 {
+  font-size: 13px;
+  font-weight: 200;
+  color: #494848;
+  margin-bottom: 10px;
+}
+
+.info:hover .pak {
+  color: #d64f4f;
+}
+
+.info .price {
+  font-size: 12px;
+  font-weight: 200;
+  color: #757272;
+  margin-bottom: 5px;
+}
+
+.info .price span {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.info .discount {
+  color: red;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid red;
+  padding: 2px 5px;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+.info .stock {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 52px;
+  border: 1px solid black;
+  padding: 2px 5px;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+/* Product Action Buttons */
+
+.action {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  /* gap: 5px;  */
+}
+
+
+.products:hover {
+  border: 1px solid #000;
+}
+
+.products:hover .action {
+  visibility: visible;
+  opacity: 1;
+}
+
+.action button {
+  width: 100%; /* Make both buttons the same width */
+  padding: 10px; /* Equal padding for both buttons */
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center; /* Ensure the text is centered */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.action button:hover {
+  color: #fff;
+  background-color: #222020;
+}
+
+
+
+
+
+/* text paragraph  */
+
+/* CSS for Main Section */
+.main-content {
+  max-width: 900px; /* Set a width that matches the image */
+  margin: 0 auto; /* Center align */
+  text-align: center;
+  padding: 50px 0; /* Vertical padding for spacing */
+}
+
+.main-content h1 {
+  font-size: 32px;
+  font-weight: 540;
+  color: #000; /* Black color */
+  line-height: 1.4;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* .main-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555; 
+  margin: 0 auto;
+} */
+
+
+/* review section  */
+
+/* Main review section styling */
+.review-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.review-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.review-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.review-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.review-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+
+.review-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+}
+
+.review-author {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 18px;
+  text-align: left;
+}
+
+/* Styling for the next and previous buttons */
+.prev-btn, .next-btn {
+  background-color: transparent;
+  border-color: black;
+  font-size: 24px;
+  /* font-weight: bold; */
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Rounded border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.prev-btn {
+  left: -20px; /* Positioned on the left */
+}
+
+.next-btn {
+  right: -20px; /* Positioned on the right */
+}
+
+.prev-btn:hover, .next-btn:hover {
+  color: white;
+  background-color: black; 
+}
+
+/* Optional styling for better presentation */
+.review-wrapper {
+  /* border-radius: 8px; */
+  padding: 40px;
+  background-color: #fff;
+}
+
+
+
+/* paragraphs of clothing  */
+
+/* Spider Hoodie Section */
+.spider-hoodie-section {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-bottom: -5px;
+}
+
+/* Section Heading */
+
+.section-heading-main {
+  font-size: 34px;
+  font-weight: 550;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: 540;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+/* Section Paragraph */
+.section-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.para {
+  font-size: 14px;
+  line-height: 2.7;
+  color: #555555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Strong Text for Emphasis */
+.section-paragraph strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section-heading {
+      font-size: 28px;
+  }
+
+  .section-paragraph {
+      font-size: 14px;
+  }
+}
+
+
+
+
+/* faqs  */
+
+/* FAQ Section */
+.faq-section {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  margin-top: -50px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+/* FAQ Item */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-item:hover,
+.faq-item:active {
+  background-color: #f9f9f9;
+}
+
+.faq-item:hover .faq-question h3,
+.faq-item:active .faq-question h3 {
+  color: red; /* Change question text color on hover/touch */
+}
+
+.faq-item:hover .faq-icon,
+.faq-item:active .faq-icon {
+  color: red; /* Change icon color on hover/touch */
+}
+
+/* FAQ Question */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.faq-icon {
+  font-size: 24px;
+  color: #000;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* FAQ Answer (Hidden by default) */
+.faq-answer {
+  display: none;
+  padding-top: 15px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Open state for FAQ answer */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Rotate the icon when FAQ is active */
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+
+.move{
+  background-color: #fff;
+  padding: 15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  
+}
+
+.move span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 200;
+  color: #181616;
+  animation: slide 15s linear infinite;
+  padding-right: 50px;
+  /* Adds space between each sentence */
+}
+
+
+
+
+  /* fotter  */
+
+/* Footer Section */
+.footer-section {
+  background-color: #000;
+  padding: 50px 30px;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/* Newsletter Signup */
+.newsletter-signup {
+  flex-basis: 30%;
+}
+
+.newsletter-signup h4 {
+  padding: 10px 0;
+  font-size: 13px; 
+  font-weight: 300;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column; /* Stacks input and button vertically */
+  gap: 10px;
+}
+
+.newsletter-signup input {
+  padding: 12px 10px; /* Reduced padding for the input */
+  border: none;
+  background-color: rgb(19, 17, 17);
+  color: #fff;
+  text-align: left; 
+}
+
+.newsletter-signup input::placeholder {
+  color: #777; /* Lighter color for placeholder text */
+}
+
+.newsletter-signup button {
+  padding: 10px 15px; /* Smaller padding for the button */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-self: start; /* Align the button to the left */
+}
+
+.newsletter-signup button:hover {
+  background-color: #615a5a;
+}
+
+
+/* Footer Links */
+.footer-links {
+  flex-basis: 25%;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #c93e3e;
+}
+
+/* Contact Info */
+.contact-info {
+  flex-basis: 30%;
+  text-align: left;
+}
+
+.contact-info p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.contact-info a {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.contact-info a:hover {
+  color: #c93e3e;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 5px;
+  margin-left: 80%;
+  margin-top: -40px;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  background-color: #0a0909;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-links i:hover {
+  background-color: #ff0707;
+}
+
+
+
+/* Payment Methods and Footer Bottom */
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: -20px;
+  border-top: 1px solid #333;
+  margin-top: 10px;
+}
+
+.payment-methods img {
+  width: 70px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.footer-bottom p {
+  margin-right: 35%;
+  color: #777;
+  font-size: 14px;
+}
+
+
+
+
+/* blogs  */
+
+
+/* blogs  */
+
+.clot {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.clot h2 {
+  font-size: 28px;
+  font-weight: 550;
+  color: #000000;
+}
+
+
+.blog-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0; /* No gaps between blog cards */
+  border: none; /* Remove any unwanted borders */
+  margin-left: 110px;
+  margin-right: 70px;
+}
+
+.blog-card {
+  width: 32%; /* Adjust width to 3 blogs per row */
+  border: 1px solid #ccc; /* Border for each blog box */
+  text-align: left;
+  margin-bottom: 120x;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+ 
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.blog-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-content {
+  padding: 20px;
+  position: relative;
+}
+
+.blog-date {
+  font-size: 11px;
+  font-weight: bold;
+  color: #777;
+  background-color: white;
+  padding: 7px 10px;
+  /* border-radius: 3px; */
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1.5px solid #ccc;
+}
+
+.blog-date:hover {
+  color: #fff;
+  background-color: black; /* Hover effect for tags */
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: 550;
+  color: #000;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.blog-description {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.blog-tags {
+  font-size: 11px;
+  color: #5a5656;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.blog-tags:hover {
+  color: red; /* Hover effect for tags */
+}
+
+.read-more {
+  font-size: 12px;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.blog-title:hover,
+.read-more:hover {
+  color: red; /* Change to desired hover color */
+}
+
+/* .read-more::after {
+  content: ' →';
+} */
+
+/* Media Queries for responsive design */
+@media (max-width: 992px) {
+  .blog-card {
+      width: 48%; /* Adjust for two per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
+
+
+/* recipt  */
+
+.cart-container {
+  position: relative;
+}
+
+.cart-receipt {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: -80px; /* Adjust to match the shopping cart icon */
+  right: 5px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ddd8d8;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* Cart item layout */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.item-details p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Subtotal section */
+.cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 15px 0;
+ font-size: 13px;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.view-cart-button, .checkout-button {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  color: #000;
+  font-size: 12px;
+}
+
+.view-cart-button:hover, .checkout-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Show cart receipt on hover */
+.cart-container:hover .cart-receipt {
+  display: block;
+}

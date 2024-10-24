@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackSuits</title>
+    <link rel="stylesheet" href="/assets/css/header&footer.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <header class="main-header">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <p>ENHANCE YOUR SHOPPING EXPERIENCE: ENJOY FREE DELIVERY ON ORDERS OVER $200!</p>
+            </div>
+
+            <!-- Logo and Navigation -->
+            <div class="logo-and-nav">
+
+                <!-- Middle Bar -->
+                <div class="middle-bar">
+                    <p>BEST SPECIAL OFFERS! UPTO 40% OFF!</p>
+                </div>
+
+
+                <div class="logo">
+                    <img src="/assets/image/l1.png" alt=>
+                    <h1>SPIDER<span>CLOTHING</span></h1>
+                </div>
+
+                <!-- Icons -->
+                <div class="icons">
+                    <a href="/pages/myaccount.html"><i class="fa fa-user"></i></a>
+                    <a href="/pages/search.html"><i class="fa fa-search"></i></a>
+                    <a href="/pages/wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a href="/pages/cart.html"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/pages/shop.html">SHOP</a></li>
+                    <li><a href="/pages/hoodies.html">HOODIES</a></li>
+                    <li><a href="/pages/tracksuits.html" class="nav-link active">TRACKSUITS</a></li>
+                    <li><a href="/pages/tshirts.html">TSHIRTS</a></li>
+                    <li><a href="/pages/sweatsuit.html">SWEATSUIT</a></li>
+                    <li><a href="/pages/sweatshirts.html">SWEATSHIRTS</a></li>
+                    <li><a href="/pages/sweatpants.html">SWEATPANTS</a></li>
+                    <li><a href="/pages/blog.html">BLOG</a></li>
+                    <li><a href="/pages/contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+    <section id="shop article">
+    
+        <div class="sort-filter-container">
+            <div class="result-text">SHOWING 1–15 ALL RESULTS</div>
+            <!-- <div class="breadcrumb-container">HOME &gt; SHOP</div> -->
+            <div class="bread-container">
+                <a href="/index.html" class="bread-link">HOME</a> &gt; 
+                <span class="bread-text">
+                    Sp5der Tracksuit Collection</span>
+            </div>
+            
+            <div class="sort-filter-buttons">
+                <div class="dropdown">
+                    <button class="sort-button" id="sortButton">SORT BY POPULARITY</button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="link-to-sort-popularity.html" class="sort-option active">SORT BY POPULARITY</a>
+                        <a href="link-to-sort-latest.html" class="sort-option">SORT BY LATEST</a>
+                        <a href="link-to-sort-rating.html" class="sort-option">SORT BY AVERAGE RATING</a>
+                        <a href="link-to-sort-low-high.html" class="sort-option">SORT BY PRICE: LOW TO HIGH</a>
+                        <a href="link-to-sort-high-low.html" class="sort-option">SORT BY PRICE: HIGH TO LOW</a>
+                    </div>
+                </div>
+                <!-- <button class="filter-button">FILTER</button> -->
+                <a class="filter-button" id="openFilterBtn" href="javascript:void(0);">FILTER</a>
+            </div>
+        </div>
+    
+      
+        <div class="shop-container">
+            <!-- Left side: Shop heading -->
+            <div class="track-head">
+                <h1 class="track-heading">Sp5der Tracksuit Collection</h1>
+            </div>
+        
+            <!-- Right side: Product grid -->
+            <div class="product-grid">
+                <div class="product-item">
+                    <a href="/pages/tshirts.html" class="product-box">
+                        <img src="/assets/image/p41.png" alt="Product 1">
+                    </a>
+                    <h2 class="product-title">LATEST SP5DER TSHIRT COLLECTION</h2>
+                </div>
+                <div class="product-item">
+                    <a href="/pages/hoodies.html" class="product-box">
+                        <img src="/assets/image/p42.png" alt="Product 2">
+                    </a>
+                    <h2 class="product-title">LATEST YOUNG THUG SPIDER HOODIE COLLECTION 2024</h2>
+                </div>
+                <div class="product-item">
+                    <a href="/pages/sweatpants.html" class="product-box">
+                        <img src="/assets/image/p43.png" alt="Product 3">
+                    </a>
+                    <h2 class="product-title">NEW SPIDER SWEATPANTS COLLECTION</h2>
+                </div>
+                <div class="product-item">
+                    <a href="/pages/tracksuits.html" class="product-box" id="black">
+                        <img src="/assets/image/p44.png" alt="Product 4">
+                    </a>
+                    <h2 class="product-title">SP5DER TRACKSUIT COLLECTION</h2>
+                </div>
+                <div class="product-item">
+                    <a href="/pages/sweatshirts.html" class="product-box">
+                        <img src="/assets/image/p45.png" alt="Product 5">
+                    </a>
+                    <h2 class="product-title">SPIDER SWEATSHIRTS</h2>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+    </section>
+
+    <section id="filters-sec">
+        <!-- Sidebar filter structure -->
+        <div class="filter-sidebar" id="filterSidebar" style="display: none;"> <!-- Start hidden -->
+            <!-- Close Button -->
+            <div class="cross-button" onclick="closeSidebar()">×</div> <!-- Cross Button -->
+          
+            <!-- Categories Section -->
+            <div class="filter-header">
+                <span class="filter-title">CATEGORIES</span>
+                <span class="toggle-btn" onclick="toggleFilterSection('categories')">+</span>
+            </div>
+            <div class="filter-section" id="categories">
+                <label>
+                    <input type="checkbox" value="category1" id="checkbox1">
+                    <a href="/pages/hoodies.html">Latest Young Thug Spider Hoodie</a> <span>46</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="category2" id="checkbox2">
+                    <a href="/pages/tshirts.html">Latest Sp5der Tshirt Collection</a> <span>26</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="category3" id="checkbox3">
+                    <a href="/pages/sweatshirts.html">Spider Sweatshirts</a> <span>7</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="category4" id="checkbox4">
+                    <a href="/pages/tracksuits.html">Sp5der Tracksuit Collection</a> <span>15</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="category5" id="checkbox5">
+                    <a href="/pages/sweatpants.html">New Spider Sweatpants Collection</a> <span>27</span>
+                </label>
+            </div>
+          
+            <!-- Gap Between Sections -->
+            <div class="section-gap"></div>
+          
+            <!-- Price Section (Centered Slider) -->
+            <div class="filter-header">
+                <span class="filter-title">PRICE</span>
+                <span class="toggle-btn" onclick="toggleFilterSection('price')">+</span>
+            </div>
+            <div class="filter-section" id="price">
+                <div class="slider-container">
+                    <input type="range" min="50" max="500" value="275" id="priceRange">
+                </div>
+                <p>PRICE: $<span id="priceLabel">275</span></p>
+            </div>
+          
+            <!-- Another Gap Before the Button -->
+            <div class="section-gap"></div>
+          
+            <!-- Filter Button -->
+            <a class="filter-but" href="/pages/shop.html" onclick="filterProducts()">FILTER</a>
+        </div>
+    </section>
+
+    <section class="products-cont">
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p21.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p22.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p23.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p61.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p62.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p24.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p25.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p26.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p27.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p28.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p29.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p30.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p63.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p64.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+        <div class="prod">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+            <img src="/assets/image/p65.webp" alt="Product 4">
+            <div class="prod-action">
+                <button class="quick-view">Quick View</button>
+                <button class="select-options">Select Options</button>
+            </div>
+            <div class="prod-info">
+                <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                <h3>Sp5der White The Spot T-Shirt</h3>
+                <p class="discount">-40%</p>
+                <p class="price">$100.00 <span>$150.00</span></p>
+            </div>
+        </div>
+
+
+         <!-- Add more product-box divs as needed -->
+        </div>
+    </div>
+
+    </section>
+
+    <section class="spider-hoodie-section">
+        <div class="content-wrapper">
+            <h1 class="section-heading-main">Elevate Your Fashion: Unleashing the Spider Tracksuit Trend!</h1>
+            <p class="section-paragraph">
+                <strong>Young Thug sp5der Worldwide Hoodie started the streetwear brand.</strong> Fans and people
+                interested in fashion will like the designer's unique style. Sp5der was a leader in Streetwear. His
+                color scheme and sp5der web designs on the shoulders of denim trucker jackets changed the way Streetwear
+                was worn. In the Spider collection, spider webs of different sizes and types can be found on Spider
+                Hoodies, T-shirts, caps, sweatsuits, and other items.
+            </p>
+            <p class="section-paragraph">
+                The <strong>Young Thug Spider Hoodie</strong> brand has finally come out after a long wait. To show his
+                fans what his style was like, he made SPIDER. Rethink everyday things by adding bright colors and spider
+                webs to them. Denim trucker jackets have web designs made of rhinestones on them. As the brand grows,
+                we'll put out new things daily. Shore ditch is where Sp5der will start.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">Discover the Ultimate Comfort and Style: Spider Tracksuits 2023</h2>
+            <p class="section-paragraph">
+                Fashion and music have always shared a deep connection, captivating fans around the globe. Recently,
+                Spider’s collection has gained the attention of both fashion enthusiasts and rap fans. Young Thug’s
+                unique style fuses with Spider’s edgy and bold designs in London, resulting in a visually striking and
+                artistically driven collection. The distinct aesthetic of Sp5der is reflected in both its apparel and
+                accessories.
+            </p>
+            <p class="section-paragraph">
+                The collection features collaboration pieces such as graphic t-shirts and hoodies, which highlight the
+                creativity and individuality of the collaborators. One standout piece is the Spider hoodie, which has
+                caught the eye of fans worldwide for its bold colors and intricate designs it’s sure to be a favorite
+                among fans of both the rapper and the brand. The Spider logo emblazoned on the front captures Sp5der’s
+                signature style with vivid colors and bold patterns, making it an iconic piece in the collection.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">Spider Tracksuit Young Thug: Elevate Your Experience
+                Sp5der Hoodie</h2>
+            <p class="section-paragraph">
+                Hoodies are the perfect blend of comfort and style, offering a cozy and laid-back appeal that fits
+                seamlessly into contemporary fashion trends. The oversized silhouette of the Sp5der hoodie provides
+                warmth during colder seasons, while its relaxed fit ensures a comfortable wear. Featuring unique
+                designs, logos, and graphics, this hoodie reflects both individuality and functionality. Versatile
+                enough to suit both streetwear and high fashion, the Sp5der hoodie has become a symbol of urban cool. A
+                timeless favorite, this hoodie effortlessly embodies comfort and style, whether paired with casual wear
+                or a more polished outfit.
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">Unlocking Timeless Style with Sp5der Tracksuits</h2>
+            <p class="section-paragraph">
+                Spider Clothing proudly presents its SP5DER Hoodie Collection for 2024-2025, a testament to the brand’s
+                commitment to participating in fashion and creating it. Founded by the ever-iconoclastic American rapper
+                Young Thug, Spider Clothing blends an audacious love for the unconventional with an impeccable fashion
+                sense. This collection, featuring men’s and women’s SP5DER hoodies, boldly challenges traditional
+                fashion norms. It celebrates the raw, unapologetic spirit of street style while maintaining a refined
+                and luxurious aesthetic that rivals the luxury of Armani suits minus the pretense.
+            </p>
+            <p class="section-paragraph">
+                The SP5DER Hoodies from Spider Clothing are nothing short of spectacular. Each piece boasts a superior
+                fit, crafted with high-quality materials and lavish decorations. These hoodies prove that casual wear
+                doesn’t have to look ordinary or inexpensive. On the contrary, they bring a touch of class to everyday
+                apparel, making them perfect for everyday wear and special occasions. Designed to accentuate your unique
+                style, provide lasting comfort, and maintain an appealing look year after year, the SP5DER Hoodie
+                Collection by Spider Clothing is an actual wardrobe essential that stays timeless. Experience the blend
+                of luxury and street savvy with Spider Clothing’s latest collection.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">The Sp5der Tracksuit: A Journey Through Time</h2>
+            <p class="section-paragraph">
+                Revamp your wardrobe with the Sp5der Worldwide Hoodie Collection, blending style, comfort, and
+                sophistication seamlessly. Whether strolling through city streets or relaxing at home, these hoodies are
+                the perfect companions for any streetwear occasion.
+            </p>
+            <p class="section-paragraph">
+                The Sp5der Hoodie Collection transcends transient fashion trends, solidifying its status as a timeless
+                streetwear wardrobe essential. The Sp5der Hoodie Store provides versatility and enduring charm, making
+                it the top choice for fashion-forward individuals who appreciate the fusion of street style and comfort.
+                Fashion is a medium of self-expression, and the Sp5der Hoodie Collection empowers you to exhibit your
+                unique streetwear flair. With diverse colors and designs at your fingertips, you can curate a streetwear
+                look that resonates with your personality and preferences.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">Elevate Your Style Game with Spider Tracksuits</h2>
+            <p class="section-paragraph">
+                The SP5DER brand is well-known in the clothing industry. The brand has become a go-to for fashion
+                enthusiasts because of its unique designs and high-quality garments. People of all ages can wear Sp5der
+                clothing because it is stylish and comfortable. Known for its high-quality and trendy clothing items,
+                Sp5der Hoodie is a famous brand. Due to its distinctive designs and partnerships with artists, the
+                company has experienced tremendous growth—a range of colors and styles to match your preferences.
+            </p>
+            <p class="section-paragraph">
+                People of all ages can find clothing under the Spider brand. You’ll find everything there, from shirts
+                to sweatpants! Their high-quality materials will last a long time to create clothing showcasing spider
+                clothing unique style and design. Collaborations with some of the most renowned fashion names are
+                underway. The company has developed an innovative apparel line by combining fashion and utility.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">Unveiling Sp5der Tracksuits: Where Style Meets Comfort</h2>
+            <p class="section-paragraph">
+                In the quest for stylish and comfortable clothing in a spectrum of colors and styles, SP5DER WORLDWIDE
+                Clothing emerges as a global favorite. Its reputation for exceptional quality has swiftly garnered a
+                dedicated fanbase in recent months. The brand’s spider-inspired designs are renowned worldwide,
+                reflecting unparalleled craftsmanship and comfort.
+            </p>
+            <p class="section-paragraph">
+                As a leading fashion house, Young Thug Spider Merch showcases the epitome of excellence in the fashion
+                industry. Each product is crafted with a blend of quality and durability that resonates with discerning
+                shoppers. Amidst a sea of clothing brands, Sp5der Clothing shines brightly, offering exceptional quality
+                and outstanding service. Every garment in our collection is meticulously designed, ensuring the highest
+                standards of craftsmanship and style. Experience the difference of Spider Clothing – where class meets
+                substance.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">The Hottest Spider Tracksuit Looks Unveiled</h2>
+            <p class="section-paragraph">
+                Founded by the iconic rapper Young Thug, Sp5der is a streetwear brand that embodies his fearless style.
+                Enthusiasts of the artist and fashion can indulge in his unique and daring fashion sense. As a
+                trailblazer in Streetwear, Sp5der has redefined the fashion landscape with its vibrant palette and
+                intricate spider web motifs adorning denim trucker jackets’ shoulders.
+            </p>
+            <p class="section-paragraph">
+                The Spider collection boasts an array of items featuring spider web designs, ranging from t-shirts to
+                caps, showcasing webs in diverse sizes and shapes. Across the group, including hoodies and beanies, the
+                globally recognized spider graphic serves as the brand’s signature emblem.
+            </p>
+            <p class="section-paragraph">
+                Exclusive limited edition pieces, like the Spider clothing line, showcase Young Thug in a spider-like
+                pose, surrounded by intricate webs. Sp5der is unveiling new items daily for the next eight days to
+                celebrate its launch. Stay updated with their latest releases by following their Instagram page! With
+                Sp5der, you can infuse a spidery allure into your style, making a bold and edgy statement that truly
+                sets you apart.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="section-heading">Discover Premium Sp5der Tracksuits: Where Style Meets Substance</h2>
+            <p class="section-paragraph">
+                Our Spider Hoodies are meticulously crafted, ensuring the highest quality for both men and women.
+                Available in diverse colors, there’s a classic hue to suit every body type. Our hoodies are fully
+                adjustable, ensuring a perfect fit for everyone. Equipped with kangaroo pockets and elastic cuffs, these
+                hoodies are fashionable and practical for your everyday needs. Lightweight and easy to carry, our
+                hoodies are your ideal winter companion, offering warmth and style at a reasonable price.
+            </p>
+            <p class="section-paragraph">
+                Made from a blend of cotton and polyester, our Spider Hoodies provide unparalleled comfort throughout
+                the day. With various colors, sizes, and designs, finding the perfect fit has never been easier. Elevate
+                any outfit with our Spider Red Worldwide hoodie 555, a versatile choice that complements any style.
+                Whether paired with jeans and sneakers for a casual look or layered with a button-down shirt and dress
+                pants for a more polished appearance, our hoodies guarantee both warmth and fashion. Embrace the season
+                in style and sophistication with our Young Thug Sp5der hoodie, a must-have addition to your wardrobe.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="newsletter-signup">
+                    <h4>SIGN UP TO GET 5% OFF YOUR FIRST ORDER AND STAY UP TO DATE ON THE LATEST PRODUCT RELEASES,
+                        SPECIAL OFFERS AND NEWS</h4>
+                    <form>
+                        <input type="email" placeholder="Your Email *" required />
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="/pages/footer-page/billing-terms.html">BILLING TERMS & CONDITION</a></li>
+                        <li><a href="/pages/footer-page/refund-policy.html">REFUND & RETURN POLICY</a></li>
+                        <li><a href="/pages/footer-page/shipping.html">SHIPPING INFORMATION</a></li>
+                        <li><a href="/pages/footer-page/terms&condition.html">TERMS & CONDITIONS</a></li>
+                        <li><a href="/pages/footer-page/privacy&policy.html">PRIVACY POLICY</a></li>
+                        <li><a href="/pages/footer-page/order-tracking.html">ORDER TRACKING</a></li>
+                        <li><a href="/pages/footer-page/faqs.html">FAQS</a></li>
+                    </ul>
+                </div>
+    
+                <div class="contact-info">
+                    <p>If you have any questions regarding your order, products or our service, please contact our
+                        customer service.</p>
+                    <p><strong>EMAIL:</strong> <a href="mailto:INFO@SPIDER.CLOTHING.US">INFO@SPIDER.CLOTHING.US</a></p>
+                </div>
+    
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+    
+                <div class="footer-bottom">
+                    <div class="payment-methods">
+                        <img src="/assets/image/f1.png" alt="Visa" />
+                        <img src="/assets/image/f2.png" alt="Mastercard" />
+                        <img src="/assets/image/f3.png" alt="Paypal" />
+                    </div>
+                    <p>&copy; 2024 Spider Clothing. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+    
+    </section>
+
+</body>
+
+<script>
+    // Get the sort button and all the sort options
+const sortButton = document.getElementById('sortButton');
+const sortOptions = document.querySelectorAll('.sort-option');
+
+// Loop through the sort options to add a click event listener
+sortOptions.forEach(option => {
+    option.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent page reload
+        
+        // Update the button text to the clicked option
+        sortButton.textContent = this.textContent;
+
+        // Remove 'active' class from all options and add to the clicked one
+        sortOptions.forEach(option => option.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+// Function to toggle favorite icon
+function toggleFavorite(element) {
+        if (element.textContent === "🤍") {
+            element.textContent = "❤️"; // Change to filled heart
+            element.style.color = "red"; // Change color to red
+        } else {
+            element.textContent = "🤍"; // Change back to empty heart
+            element.style.color = ""; // Reset color
+        }
+    }
+
+</script>
+
+<script>
+    // Function to open the sidebar
+    function openSidebar() {
+        const filterSidebar = document.getElementById('filterSidebar');
+        filterSidebar.style.display = 'flex'; // Change to 'flex' to show sidebar
+    }
+
+    // Function to close the sidebar only
+    function closeSidebar() {
+        const filterSidebar = document.getElementById('filterSidebar');
+        filterSidebar.style.display = 'none'; // Hide the sidebar
+    }
+
+    // Function to toggle filter sections (categories or price)
+    function toggleFilterSection(section) {
+        const sectionDiv = document.getElementById(section);
+        const btn = sectionDiv.previousElementSibling.querySelector('.toggle-btn');
+        
+        if (sectionDiv.style.display === 'none' || !sectionDiv.style.display) {
+            sectionDiv.style.display = 'block';
+            btn.textContent = '-';
+        } else {
+            sectionDiv.style.display = 'none';
+            btn.textContent = '+';
+        }
+    }
+
+    // Function to filter products (Placeholder for your filtering logic)
+    function filterProducts() {
+        alert('Filtering products based on selected options.'); // Add your filtering logic here
+        closeSidebar(); // Optionally close the sidebar after filtering
+    }
+
+    // Add an event listener to the button to open the sidebar
+    document.getElementById('openFilterBtn').addEventListener('click', openSidebar);
+
+    // Price range slider update
+    const priceRange = document.getElementById('priceRange');
+    const priceLabel = document.getElementById('priceLabel');
+
+    priceRange.addEventListener('input', function() {
+        priceLabel.textContent = priceRange.value;
+    });
+</script>
+
+</html>

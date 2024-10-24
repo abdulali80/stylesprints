@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS_DETAILS</title>
+    <link rel="stylesheet" href="/assets/css/header&footer.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <header class="main-header">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <p>ENHANCE YOUR SHOPPING EXPERIENCE: ENJOY FREE DELIVERY ON ORDERS OVER $200!</p>
+            </div>
+
+            <!-- Logo and Navigation -->
+            <div class="logo-and-nav">
+
+                <!-- Middle Bar -->
+                <div class="middle-bar">
+                    <p>BEST SPECIAL OFFERS! UPTO 40% OFF!</p>
+                </div>
+
+
+                <div class="logo">
+                    <img src="/assets/image/l1.png" alt=>
+                    <h1>SPIDER<span>CLOTHING</span></h1>
+                </div>
+
+                <!-- Icons -->
+                <div class="icons">
+                    <a href="/pages/myaccount.html"><i class="fa fa-user"></i></a>
+                    <a href="/pages/search.html"><i class="fa fa-search"></i></a>
+                    <a href="/pages/wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a href="/pages/cart.html" class="nav-link active"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/pages/shop.html">SHOP</a></li>
+                    <li><a href="/pages/hoodies.html">HOODIES</a></li>
+                    <li><a href="/pages/tracksuits.html">TRACKSUITS</a></li>
+                    <li><a href="/pages/tshirts.html">TSHIRTS</a></li>
+                    <li><a href="/pages/sweatsuit.html">SWEATSUIT</a></li>
+                    <li><a href="/pages/sweatshirts.html">SWEATSHIRTS</a></li>
+                    <li><a href="/pages/sweatpants.html">SWEATPANTS</a></li>
+                    <li><a href="/pages/blog.html">BLOG</a></li>
+                    <li><a href="/pages/contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+    <section id="shop article">
+    
+        <div class="filter">
+            <!-- <div class="breadcrumb-container">HOME &gt; SHOP</div> -->
+            <div class="crumb">
+                <a href="/index.html" class="crumb-link">HOME</a> &gt; 
+                <span class="crumb-text">PRODUCTS-DETAILS</span>
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+<div class="container-products">
+    <!-- Left Side: Product Images -->
+    <div class="product-images">
+        <div class="large-image">
+            <img id="mainImage" src="/assets/image/p1.webp" alt="Dark Pink Spider Hoodie">
+            <!-- Featured Text on Top Left -->
+            <div class="featured-text">Featured</div>
+        </div>
+        <div class="thumbnails">
+            <img src="/assets/image/p1.webp" alt="Image 1" class="thumbnail" onclick="changeImage('/assets/image/p1.webp')">
+            <img src="/assets/image/p2.webp" alt="Image 2" class="thumbnail" onclick="changeImage('/assets/image/p2.webp')">
+            <img src="/assets/image/p3.webp" alt="Image 3" class="thumbnail" onclick="changeImage('/assets/image/p3.webp')">
+        </div>
+    </div>
+
+    <!-- Right Side: Product Details -->
+    <div class="product-details">
+        <h1>Dark Pink Spider Hoodie</h1>
+        <p class="discount-price"><span class="discount">-50%</span> $160.00 <span class="original-price">$320.00</span></p>
+        <ul class="features">
+            <li><span class="red-tick">✔</span> Hooded</li>
+            <li><span class="red-tick">✔</span> 80% Cotton, 20% Polyester</li>
+            <li><span class="red-tick">✔</span> Kangaroo Pocket</li>
+            <li><span class="red-tick">✔</span> Ribbed Cuffs and Hems</li>
+            <li><span class="red-tick">✔</span> Made in USA</li>
+        </ul>
+        
+        <div class="size-selection">
+            <label>Size:</label>
+            <button class="size-btn" id="XS">XS</button>
+            <button class="size-btn" id="S">S</button>
+            <button class="size-btn" id="M">M</button>
+            <button class="size-btn" id="L">L</button>
+            <button class="size-btn" id="XL">XL</button>
+            <button class="size-btn" id="XXL">XXL</button>
+            <a href="#" id="sizeGuide" class="size-guide-link">Size Guide</a>
+        </div>
+
+        <!-- Size Guide Modal -->
+        <div id="sizeModal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <img src="/assets/image/sh2.png" alt="Size Guide" class="size-guide-image">
+        </div>
+
+        <div class="unique-product-quantity-cart">
+            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'decrease', 165)">-</span>
+            <span class="unique-quantity-display">1</span>
+            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'increase', 165)">+</span>
+        </div>
+
+      
+          <div class="checkout-buttons-container">
+            <a href="https://example.com/checkout-pro" class="checkout-link">
+              <button class="checkout-button-pro">ADD TO CART</button>
+            </a>
+            
+            <a href="https://example.com/checkout-produ" class="checkout-link">
+              <button class="checkout-button-produ">BUY NOW</button>
+            </a>
+          </div>
+          
+
+        <div class="wishlist-share">
+            <div class="favorite-iconn" onclick="toggleFavorite(this)">🤍</div>
+            <span class="wishlist-text">Add to Wishlist</span>
+        </div>
+
+        <div class="sku-tags">
+            <span class="sku">SKU: N/A</span>
+            <span class="tags">Tags: <a href="#">Pink Hoodie</a>, <a href="#">Spider Hoodie</a></span>
+        </div>
+        <div class="category">
+            Category: <a href="#">Latest Young Thug Spider Hoodie Collection 2024</a>
+        </div>
+
+        <div class="shipping-info">
+            <img src="/assets/image/sh1.png" alt="Shipping Icon">
+            <div>
+                <p class="boc1">Free And Fast Shipping</p>
+                <p class="boc2">Enjoy Free Delivery on Orders Over $200!</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    
+    <section>
+    <div class="tabs">
+        <button class="tablinks active" onclick="openTab(event, 'Description')">Description</button>
+        <button class="tablinks" onclick="openTab(event, 'AdditionalInformation')">Additional Information</button>
+        <button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews (0)</button>
+        <button class="tablinks" onclick="openTab(event, 'Shipping')">Shipping & Delivery</button>
+      </div>
+      
+      <div id="Description" class="tabcontent" style="display: block;">
+
+         <p>It is introducing the Dark Pink Spider Hoodie? a trendy and attention-grabbing piece of clothing for those who want to make a bold fashion statement. This Pink Hoodie for men and women is all about style and comfort, thanks to its top-notch materials and design.</p>
+        <h2>Elevate your winter wardrobe with our Dark Pink Spider Hoodie – the perfect blend of fashion and comfort.</h2>
+        <p>It is introducing the <strong>Dark Pink Spider Hoodie</strong>? A trendy and attention-grabbing piece of clothing for those who want to make a bold fashion statement...</p>
+        <h3>Benefits:</h3>
+        <ul>
+          <li><strong>Trendy Warmth:</strong> Stay cozy in a hoodie that's as stylish as it is snug.</li>
+          <li><strong>Versatile Fashion:</strong> It suits every occasion, from casual outings to lounging at home.</li>
+          <li><strong>Quality Craftsmanship:</strong> Crafted with precision for durability and lasting style.</li>
+          <li><strong>Express Individuality:</strong> Stand out with a unique and fashionable hoodie choice.</li>
+          <li><strong>Affordable Luxury:</strong> Experience high-end fashion without breaking the bank.</li>
+        </ul>
+
+        <h3>Color:</h3>
+        <p>The Sp5der Pink Hoodie boasts a rich and deep dark pink color that adds a vibrant and bold touch to your wardrobe.</p>
+
+        <h3>Material:</h3>
+        <p>Manufactured from high-quality materials, this hoodie ensures both comfort and durability. The fabric feels soft and cozy against your skin while being tough enough to handle regular wear.</p>
+
+        <h3>Design:</h3>
+        <p>Featuring a relaxed fit and an adjustable hood with drawstrings, this hoodie is versatile for a wide range of activities. The standout feature is the Sp5der logo prominently displayed on the chest, giving it a unique and edgy edge</p>
+
+        <h3>Versatility:</h3>
+        <p>This hoodie can be your go-to choice for various occasions. Whether you’re headed for a casual outing, engaging in sports activities, or simply chilling at home, the Dark Pink Spider Hoodie combines style and comfort seamlessly.</p>
+
+        <h3>Product Highlights:</h3>
+        <p><b>Eye-catching Color:</b> The captivating dark pink color of this hoodie allows you to stand out and make a bold fashion statement wherever you go.</p>
+        <p><b>Comfortable and Durable:</b> It’s not just stylish; it’s also comfortable and built to last. The soft fabric ensures coziness, while its sturdy construction ensures it keeps its shape over time.</p>
+        <p><b>Unique Design:</b> The Sp5der logo on the chest adds an edgy and distinctive touch, setting it apart from traditional hoodies. If you’re looking for a fashionable and unique wardrobe staple, this hoodie is an excellent choice.</p>
+        
+        <h3>Shipping & Return</h3>
+        <ul>
+          <li><strong>Trendy Warmth:</strong> Worldwide shipping is available.</li>
+          <li><strong>Versatile Fashion:</strong> Delivery takes 10-15 days.</li>
+          <li><strong>Quality Craftsmanship:</strong> Crafted with precision for durability and lasting style.</li>
+          <li><strong>Express Individuality:</strong> Our customers are significant to us! Our products can be exchanged or returned if you are unsatisfied with them.</li>
+          <li><strong>Affordable Luxury:</strong> You can choose to have the product shipped again. Exchanges and returns should be received within 15-20 days, and the customer is responsible for shipping for exchanges and returns. Washed, worn, or used items won’t be accepted. Import fees are non-refundable.</li>
+        </ul>
+
+    </div>
+      
+      <div id="AdditionalInformation" class="tabcontent">
+        <p><strong>Size: </strong>XS, S, M, L, XL, XXL</p>
+      </div>
+      
+      <div id="Reviews" class="tabcontent">
+        <p>No reviews yet. Be the first to review this product!</p>
+
+        <h5>Be the first to review “Dark Pink Spider Hoodie”</h5>
+
+        <p>You must be logged in to post a review.</p>
+      </div>
+      
+      <div id="Shipping" class="tabcontent">
+        <h2>Quick & free Shipping in US & Canada</h2>
+        <p>When you place an order with us, we’ll make sure it gets to you in the US or Canada as fast as possible. Here’s what you can expect:</p>
+        <ul>
+          <li>Order Processing: After you order, it takes up to 48 hours to verify, process, and ship it. We do this on business days (Monday – Friday).</li>
+          <li>Dispatch Time: We aim to send your order from our facility within 1-2 business days. But during busy times, like the year-end or sales events, it might take a bit longer.</li>
+          <li>Delivery Time in the US: Once we dispatch your order, it typically takes 8-14 business days to reach you. Keep in mind that this may vary during holidays or special launches.</li>
+          <li>Free Standard Shipping: We offer free standard shipping for all domestic US and Canada orders. It takes 8-14 business days</li>
+          <li>Reliable Carriers: We use trusted carriers like DHL, FedEx, USPS, and UPS to make sure your order arrives safely.Experience high-end fashion without breaking the bank.</li>
+          <li>Delivery Date Info: During checkout, we’ll let you know when to expect your delivery. Remember, we only process shipments on US business days.</li>
+          <li>Tracking: You’ll receive an email with your tracking number within 3-5 business days after your shipment is handed over to the carrier. You can use this number to track your order.</li>
+        </ul>
+
+        <h2>Order Shipping in UK</h2>
+        <p>If you’re in the UK, here’s what you can expect:</p>
+        <ul>
+            <li>Order Processing: It takes up to 48 hours to verify, process, and ship your order after you place it. This happens on business days (Monday – Friday).</li>
+            <li>Dispatch Time: We aim to send your order from our UK facility within 1-2 business days. But during busy times, like the year-end or sales events, it might take a bit longer.</li>
+            <li>Delivery Time in the UK: Once we dispatch your order, it typically takes 8-15 business days to reach you. Keep in mind that this may vary during holidays or special launches.</li>
+            <li>Free Standard Shipping: We offer free standard shipping for all domestic UK orders. It takes 8-14 business days.</li>
+            <li>Reliable Carriers: We use trusted carriers like DHL, FedEx, USPS, and UPS to make sure your order arrives safely.</li>
+            <li>Delivery Date Info: During checkout, we’ll let you know when to expect your delivery. Remember, we only process shipments on UK business days.</li>
+            <li>Tracking: You’ll receive an email with your tracking number within 1-2 business days after your shipment is handed over to the carrier. You can use this number to track your order.</li>
+        </ul>
+
+        <h2>International Shipping</h2>
+        <p>For customers outside the US, Canada, and the UK, we offer real-time UPS & DHL International Shipping at checkout. Here’s what you need to know:</p>
+        <ul>
+            <li>Import/Customs Fees: Depending on your country, there may be import/customs fees applied to your order.</li>
+            <li>Responsibility: We’re not responsible for shipping delays due to customs, natural events, or transportation issues. Any extra fees, customs charges, or back-end costs are your</li>
+            <li>Standard International Shipping: It typically takes 5-7 business days for standard international shipping. You’ll receive an email notification when your tracking number becomes available.</li>
+        </ul>
+        <p>Customs Info: Remember, any customs fees, taxes, or duties are your responsibility. We’re not liable for any customs-related issues or incorrect shipping information. You’ll get your tracking number 1-2 business days after you place your order. Multiple Items: If you order multiple items, they might be shipped separately to get to you faster. You’ll receive individual tracking codes for each item. Lost Packages: Unfortunately, we can’t take responsibility for misplaced or stolen packages. If your tracking says it’s shipped and the address you provided matches the shipping address, we can’t refund lost packages. If you have questions, please reach out to support@spiderclothing.us, and we’ll do our best to assist you. We hope this information makes your shopping experience smoother and more enjoyable!  </p>
+    </div>
+</section>
+
+      <diV class="borde"></diV>
+
+      <section id="recent-products">
+
+        <div class="new-cloth">
+            <h2>Related products</h2>
+        </div>
+    
+    <div class="recently-viewed">
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p4.webp" alt="Product 1">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der 555 555 Black Hoodie</h3>
+                    <p class="discount">-42%</p>
+                    <p class="price">$150.00 <span>$250.00</span></p>
+                </div>
+            </div>
+    
+            
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p24.webp" alt="Product 2">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der White The Spot T-Shirt</h3>
+                    <p class="discount">-40%</p>
+                    <p class="price">$100.00 <span>$150.00</span></p>
+                </div>
+            </div>
+    
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p39.webp" alt="Product 3">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der White The Spot T-Shirt</h3>
+                    <p class="discount">-40%</p>
+                    <p class="price">$100.00 <span>$150.00</span></p>
+                </div>
+            </div>
+    
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p53.webp" alt="Product 4">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der White The Spot T-Shirt</h3>
+                    <p class="discount">-40%</p>
+                    <p class="price">$100.00 <span>$150.00</span></p>
+                </div>
+            </div>
+    
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p17.webp" alt="Product 1">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der 555 555 Black Hoodie</h3>
+                    <p class="discount">-42%</p>
+                    <p class="price">$150.00 <span>$250.00</span></p>
+                </div>
+            </div>
+    
+            <!-- Add more product-box divs as needed -->
+        </div>
+    
+    </section>
+
+    <section id="footer">
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="newsletter-signup">
+                    <h4>SIGN UP TO GET 5% OFF YOUR FIRST ORDER AND STAY UP TO DATE ON THE LATEST PRODUCT RELEASES,
+                        SPECIAL OFFERS AND NEWS</h4>
+                    <form>
+                        <input type="email" placeholder="Your Email *" required />
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="/pages/footer-page/billing-terms.html">BILLING TERMS & CONDITION</a></li>
+                        <li><a href="/pages/footer-page/refund-policy.html">REFUND & RETURN POLICY</a></li>
+                        <li><a href="/pages/footer-page/shipping.html">SHIPPING INFORMATION</a></li>
+                        <li><a href="/pages/footer-page/terms&condition.html">TERMS & CONDITIONS</a></li>
+                        <li><a href="/pages/footer-page/privacy&policy.html">PRIVACY POLICY</a></li>
+                        <li><a href="/pages/footer-page/order-tracking.html">ORDER TRACKING</a></li>
+                        <li><a href="/pages/footer-page/faqs.html">FAQS</a></li>
+                    </ul>
+                </div>
+    
+                <div class="contact-info">
+                    <p>If you have any questions regarding your order, products or our service, please contact our
+                        customer service.</p>
+                    <p><strong>EMAIL:</strong> <a href="mailto:INFO@SPIDER.CLOTHING.US">INFO@SPIDER.CLOTHING.US</a></p>
+                </div>
+    
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+    
+                <div class="footer-bottom">
+                    <div class="payment-methods">
+                        <img src="/assets/image/f1.png" alt="Visa" />
+                        <img src="/assets/image/f2.png" alt="Mastercard" />
+                        <img src="/assets/image/f3.png" alt="Paypal" />
+                    </div>
+                    <p>&copy; 2024 Spider Clothing. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+    
+    </section>
+
+</body>
+
+<script>
+    // Change large image when thumbnail clicked
+    function changeImage(src) {
+        document.getElementById('mainImage').src = src;
+    }
+    
+    // Toggle favorite function
+    function toggleFavorite(element) {
+        if (element.textContent === "🤍") {
+            element.textContent = "❤️";
+            element.style.color = "red";
+        } else {
+            element.textContent = "🤍";
+            element.style.color = "";
+        }
+    }
+    
+    // Handle size button clicks
+    let sizeButtons = document.querySelectorAll('.size-btn');
+    sizeButtons.forEach(button => {
+        button.onclick = function() {
+            // Remove active class from all size buttons
+            sizeButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to the clicked button
+            this.classList.add('active');
+        };
+    });
+    
+    // Handle size guide modal
+    document.getElementById('sizeGuide').onclick = function(event) {
+        event.preventDefault();
+        document.getElementById('sizeModal').style.display = 'block';
+    };
+    
+    document.getElementById('closeModal').onclick = function() {
+        document.getElementById('sizeModal').style.display = 'none';
+    };
+    
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById('sizeModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+
+<script>
+    function uniqueUpdateQuantity(element, action, price) {
+        const quantityDisplay = element.parentNode.querySelector('.unique-quantity-display');
+        let currentQuantity = parseInt(quantityDisplay.textContent);
+        
+        if (action === 'increase') {
+            currentQuantity++;
+        } else if (action === 'decrease' && currentQuantity > 1) {
+            currentQuantity--;
+        }
+
+        quantityDisplay.textContent = currentQuantity;
+
+        const itemSubtotal = element.closest('.unique-product-item').querySelector('.unique-item-subtotal');
+        const updatedSubtotal = (currentQuantity * price).toFixed(2);
+        itemSubtotal.textContent = updatedSubtotal;
+    }
+</script> 
+
+<script>
+    function openTab(evt, tabName) {
+  // Hide all tabcontent elements
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the active class from all buttons
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab and add the active class to the clicked button
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+
+</html>
+
+
+
+
+

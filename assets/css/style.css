@@ -1,0 +1,3419 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* shop article  */
+
+/* Sort and Filter Section (Top Bar) */
+.sort-filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: -8px;
+}
+
+.result-text {
+    font-size: 12px;
+    color: #777;
+}
+
+.breadcrumb-container {
+    font-size: 10px;
+    color: #777;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.breadcrumb-link {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: red; /* Change color when hovering over HOME */
+}
+
+.breadcrumb-text {
+    color: #777;
+}
+
+
+.sort-filter-buttons {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+}
+
+/* Dropdown Button */
+.dropdown {
+    position: relative; /* Position for dropdown */
+}
+
+.sort-button {
+    padding: 10px 20px;
+    background: none; /* No background color */
+    color: #777; /* Text color */
+    border: none; /* No border */
+    cursor: pointer;
+    font-size: 12px;
+    transition: color 0.5s ease;
+}
+
+/* Change text color on hover */
+.sort-button:hover {
+    color: #7777; /* Change color on hover */
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show on hover */
+}
+
+.dropdown-content a {
+    color: black; /* Text color */
+    font-size: 12px;
+    padding: 14px 10px; /* Padding for links */
+    text-decoration: none; /* No underline */
+    display: block; /* Block level for full clickable area */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #000; /* Change background on hover */
+    color: #fff;
+}
+
+/* Active link styling */
+.sort-option.active {
+    background-color: #777;
+    color: #fff;
+}
+
+
+.filter-button {
+  display: inline-block; /* Make sure it's treated as a block element for proper centering */
+  padding: 5px 35px;
+  background-color: #000; 
+  color: #fff; 
+  border: none; 
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 550;
+  transition: background-color 0.3s ease;
+  height: 30px; 
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-decoration: none; /* Ensures no underline on the text */
+  line-height: 20px; /* Centers the text vertically within the button */
+}
+
+.filter-button:hover {
+  background-color: #333; 
+}
+
+
+
+
+/* Show the dropdown content on button click */
+.show {
+    display: block;
+}
+
+/* Container for Shop Heading and Product Grid */
+.shop-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+.shop-header {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center; /* Center items vertically */
+    flex: 1;
+}
+
+.shop-heading {
+    font-size: 23px;
+    font-weight: bold;
+    color: #000;
+    text-align: left; /* Ensure text is left aligned */
+    margin: 0; /* Remove default margin */
+    margin-top: -40px;
+}
+
+
+/* Right side: Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0; /* Remove gaps between product boxes */
+}
+
+/* Product Item */
+.product-item {
+    text-align: center;
+    width: 160px;
+    margin: 0; /* Ensure no margin */
+}
+
+.product-box {
+    display: block; 
+    border: 1px solid #ccc; 
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+    height: 160px; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.product-box img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+.product-title {
+    font-size: 11px;
+    color: #777;
+    margin: 0;
+    padding-top: 10px; /* Space between the box and the title */
+}
+
+/* Hover effects */
+.product-box:hover {
+    /* transform: scale(1.05); */
+    border: 1px solid #000; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .product-item {
+        width: calc(100% / 4); /* 4 boxes per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(100% / 2); /* 2 boxes per row for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* 1 box per row for mobile */
+    }
+}
+
+
+
+
+/* products of all pages  */
+
+
+/* .prod {
+    width: 325px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #c2c0c0;
+    overflow: hidden;
+    transition: border 0.3s;
+    display: inline-block; 
+    margin: -3px ;
+    white-space: normal;
+  } */
+
+.products-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0; 
+}
+
+  .prod {
+    width: 324px; /* Fixed width for all boxes */
+    /* height: 400px;  */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #c2c0c0;
+    overflow: hidden;
+    transition: border 0.3s;
+    display: inline-block;
+    vertical-align: top; /* Ensures all boxes are aligned properly */
+    margin: 0; /* Remove any margin between boxes */
+    box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+  
+  .prod img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  
+  /* Favorite Icon */
+  .favorite-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    /* Smooth transition for color */
+  }
+  
+  /* Product Info */
+  .prod-info {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  
+  .prod-info .pak {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    color: #757272;
+  }
+
+  .prod-info:hover .pak {
+    color: #d64f4f; 
+  }
+
+
+  .prod-info h3 {
+    font-size: 13px;
+    font-weight: 200;
+    color: #494848;
+    margin-bottom: 7px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    cursor: pointer;
+}
+
+.prod-info h3:hover {
+    color: red; 
+    /* font-weight: 400;  */
+}
+
+  
+  
+  .prod-info .price {
+    font-size: 12px;
+    font-weight: 200;
+    color: #757272;
+    margin-bottom: 5px;
+  }
+  
+  .prod-info .price span {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .prod-info .discount {
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid red;
+    padding: 2px 5px;
+    font-size: 12px;
+    background-color: #fff;
+  }
+  
+  /* Product Action Buttons */
+  .prod-action {
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    /* Initially invisible */
+    transition: opacity 0.3s;
+    /* Smooth transition for visibility */
+  }
+  
+  .prod:hover {
+    border: 1px solid #000;
+    /* Show border on hover */
+  }
+  
+  .prod:hover .prod-action {
+    visibility: visible;
+    /* Show buttons on hover */
+    opacity: 1;
+    /* Make buttons visible */
+  }
+  
+  .prod:hover .favorite-icon {
+    visibility: visible;
+    /* Show favorite icon on hover */
+  }
+  
+  /* Action Buttons */
+  .prod-action button {
+    padding: 12px 30px;
+    font-size: 14px;
+    margin: 2px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .prod-action button:hover {
+    color: #fff;
+    background-color: #222020;
+  }
+
+  /* recents viewed of products  */
+
+  .new-cloth {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  
+  .new-cloth h2 {
+    font-size: 28px;
+    font-weight: 550;
+    color: #000000;
+  }
+
+
+.recently-viewed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0; 
+}
+
+  .recent-produc {
+    width: 259px; 
+    /* height: 450px;  */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #c2c0c0;
+    overflow: hidden;
+    transition: border 0.3s;
+    display: inline-block;
+    vertical-align: top; /* Ensures all boxes are aligned properly */
+    margin: 0; /* Remove any margin between boxes */
+    box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+  
+.recent-produc img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: -20px;
+  }
+  
+  
+  /* Favorite Icon */
+  .favorite-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    /* Smooth transition for color */
+  }
+  
+  /* Product Info */
+  .recen-info {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  
+  .recen-info .pak {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    color: #757272;
+  }
+
+  .recen-info:hover .pak {
+    color: #d64f4f; 
+  }
+
+
+  .recen-info h3 {
+    font-size: 13px;
+    font-weight: 200;
+    color: #494848;
+    margin-bottom: 7px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    cursor: pointer;
+}
+
+.recen-info h3:hover {
+    color: red; 
+    /* font-weight: 400;  */
+}
+
+  
+  
+  .recen-info .price {
+    font-size: 12px;
+    font-weight: 200;
+    color: #757272;
+    margin-bottom: 5px;
+  }
+  
+  .recen-info .price span {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .recen-info .discount {
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid red;
+    padding: 2px 5px;
+    font-size: 12px;
+    background-color: #fff;
+  }
+  
+  /* Product Action Buttons */
+  .rec-action {
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    /* Initially invisible */
+    transition: opacity 0.3s;
+    /* Smooth transition for visibility */
+  }
+  
+  .recent-produc:hover {
+    border: 1px solid #000;
+    /* Show border on hover */
+  }
+  
+  .recent-produc:hover .rec-action {
+    visibility: visible;
+    /* Show buttons on hover */
+    opacity: 1;
+    /* Make buttons visible */
+  }
+  
+  .recent-produc:hover .favorite-icon {
+    visibility: visible;
+    /* Show favorite icon on hover */
+  }
+  
+  /* Action Buttons */
+  .rec-action button {
+    width: 100%; /* Make both buttons the same width */
+    padding: 10px; /* Equal padding for both buttons */
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center; /* Ensure the text is centered */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  }
+
+  
+  
+  .rec-action button:hover {
+    color: #fff;
+    background-color: #222020;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* hodies  */
+
+  /* shop article  */
+
+  #black {
+    border: 1px solid transparent; /* Default border is transparent */
+    padding: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition for hover */
+    border-color: black;
+  }
+  
+.bread-container {
+    font-size: 11px;
+    color: #777;
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 60px;
+}
+
+.bread-link {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bread-link:hover {
+    color: red; /* Change color when hovering over HOME */
+}
+
+.bread-text {
+    color: #777;
+}
+
+.shop-head {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center; /* Center items vertically */
+    flex: 2;
+    margin-right: 90px;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: 545;
+    color: #000;
+    text-align: left; /* Ensure text is left aligned */
+    margin: 0; /* Remove default margin */
+    margin-top: -40px;
+}
+
+
+
+
+
+/* paragraph texts  */
+
+/* paragraphs of clothing  */
+
+/* Spider Hoodie Section */
+.spider-hoodie-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Content Wrapper */
+  .content-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-bottom: -5px;
+  }
+  
+  /* Section Heading */
+  
+  .section-heading-main {
+    font-size: 34px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  
+  .section-heading {
+    font-size: 32px;
+    font-weight: 540;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  
+  /* Section Paragraph */
+  .section-paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* .para {
+    font-size: 14px;
+    line-height: 2.7;
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: center;
+  } */
+  
+  /* Strong Text for Emphasis */
+  .section-paragraph strong {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .section-heading {
+        font-size: 28px;
+    }
+  
+    .section-paragraph {
+        font-size: 14px;
+    }
+  }
+  
+
+
+
+  /* track suits   */
+
+  /* Article shop  */
+
+  .track-head {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center; /* Center items vertically */
+    flex: 2;
+    margin-right: 120px;
+}
+
+.track-heading {
+    font-size: 30px;
+    font-weight: 549;
+    color: #000;
+    text-align: left; /* Ensure text is left aligned */
+    margin: 0; /* Remove default margin */
+    margin-top: -40px;
+}
+
+
+
+
+
+/* t shirts  */
+
+
+
+
+
+/* sweatsuits  */
+
+.no-products-message {
+    font-size: 14px; 
+    color: #474646; 
+    padding: 40px 40px;
+    text-align: left; /* Align text to the left */
+    border-top: 1px solid #ccc; /* Top border */
+    margin-top: 20px; /* Space from the top */
+    width: 100%;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.no-products-message:hover {
+    color: #000; /* Change text color on hover */
+    font-weight: bold; /* Optional: make text bold on hover */
+}
+
+
+
+
+/* sweetshirts  */
+
+
+
+
+/* sweatpants  */
+
+
+
+/* blogs  */
+
+.clot {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .clot h2 {
+    font-size: 28px;
+    font-weight: 550;
+    color: #000000;
+  }
+
+
+.blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0; /* No gaps between blog cards */
+    border: none; /* Remove any unwanted borders */
+}
+
+.blog-card {
+    width: 33.3%; /* Adjust width to 3 blogs per row */
+    border: 1px solid #ccc; /* Border for each blog box */
+    text-align: left;
+    margin-bottom: 0;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.blog-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+    position: relative;
+}
+
+.blog-date {
+    font-size: 11px;
+    font-weight: bold;
+    color: #777;
+    background-color: white;
+    padding: 7px 10px;
+    /* border-radius: 3px; */
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1.5px solid #ccc;
+}
+
+.blog-date:hover {
+    color: #fff;
+    background-color: black; /* Hover effect for tags */
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: 550;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.blog-description {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.blog-tags {
+    font-size: 11px;
+    color: #5a5656;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.blog-tags:hover {
+    color: red; /* Hover effect for tags */
+}
+
+.read-more {
+    font-size: 12px;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.blog-title:hover,
+.read-more:hover {
+    color: red; /* Change to desired hover color */
+}
+
+/* .read-more::after {
+    content: ' →';
+} */
+
+/* Media Queries for responsive design */
+@media (max-width: 992px) {
+    .blog-card {
+        width: 48%; /* Adjust for two per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: -8px;
+}
+
+
+.crumb {
+    font-size: 11px;
+    color: #777;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.crumb-link {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.crumb-link:hover {
+    color: red; /* Change color when hovering over HOME */
+}
+
+.crumb-text {
+    color: #777;
+}
+
+
+
+
+/* contact us   */
+
+.clot-contact {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.clot-contact h2 {
+  font-size: 22px;
+  font-weight: 550;
+  color: #000;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* Main section container */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 90px;
+}
+
+/* Left side contact form */
+.contact-form {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.contact-form h2 {
+  text-align: left;
+  font-size: 19px;
+  margin-bottom: 40px;
+  font-weight: 550;
+}
+
+.contact-form label {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 7px;
+  text-align: left;
+  color: #464343;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Right side contact info */
+.contact-link {
+  width: 48%;
+  margin-left: 90px;
+}
+
+.contact-link h3 {
+  font-size: 17px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-link ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-link li {
+  margin-bottom: 10px;
+}
+
+.contact-link a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link i {
+  color: black;
+}
+
+.contact-link a:hover {
+  color: red; 
+}
+
+.follow {
+  margin-top: 50px;
+}
+
+.contact-link i {
+  margin-right: 8px;
+}
+
+/* Social media icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.social-icons i {
+  color: black;
+}
+
+.social-icons i:hover {
+  color: red; /* Hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+      flex-direction: column;
+  }
+
+  .contact-form,
+  .contact {
+      width: 100%;
+  }
+}
+
+
+
+
+
+/* my account login   */
+
+ .login-container {
+  text-align: center;
+  width: 350px;
+  margin: 0 auto; /* Center the form */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.login-heading {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 540;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form label {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 7px;
+  width: 100%; /* Ensure label takes full width */
+}
+
+.login-form input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.left-options {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+#remember {
+ margin-top: 13px;
+}
+
+.remember-me {
+  margin-left: 8px; 
+  font-size: 12px;
+}
+
+.forgot-password {
+  font-size: 12px;
+  text-decoration: none;
+  color: #494848;
+  margin-bottom: 8px;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  /* color: #000; */
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.login-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: red;
+}
+
+.register-section {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link {
+  text-decoration: underline;
+  color: #494848;
+}
+
+.register-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+
+/* lost password  */
+
+.lost-heading {
+  font-size: 12px;       /* Set font size to 12px */
+  line-height: 18px;
+  text-align: left;      /* Align text to the left */
+  color: #585656;           /* Set text color to #777 */
+  margin: 0;             /* Remove any default margin */
+  margin-bottom: 20px;
+}
+
+.login-butt {
+  background-color: rgb(245, 55, 55);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.login-butt:hover {
+  background-color: black;
+}
+
+
+
+
+/* register login */
+
+.privacy-link {
+  text-decoration: underline;  /* Add underline to the link */
+  color: #494848;              /* Change the link color */
+}
+
+.privacy-link:hover {
+  color: red;                  /* Change color when hovering */
+  text-decoration: underline;   /* Ensure underline stays on hover */
+}
+
+
+/* button  */
+
+.login-butto {
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.login-butto:hover {
+  background-color: rgb(245, 55, 55);
+}
+
+
+
+
+
+/* wish list   */
+
+
+/* Main wishlist section */
+.wishlist-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Heart and count positioning */
+.wishlist-heart {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.wishlist-heart img {
+  width: 110px; /* Set the size of the heart icon */
+}
+
+.wishlist-count {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Heading and paragraph styles */
+.wishlist-section h2 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #111010;
+}
+
+.wishlist-section p {
+  font-size: 13px;
+  margin-bottom: 30px;
+  color: #5a5757;
+}
+
+.heart-symbol {
+  font-size: 16px;
+  color: #000;
+}
+
+.return-button {
+  display: inline-block;        /* Make it behave like a button */
+  padding: 16px 50px;
+  font-size: 12px;
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;        /* Remove underline from the link */
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+
+.return-button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+/* cart icon  */
+
+.cart-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+.wishlist-cart {
+  position: relative;
+  display: inline-block;
+  margin-top: -60px;
+}
+
+.wishlist-cart img {
+  width: 250px; 
+}
+
+.wish-cart-count {
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Heading and paragraph styles */
+.cart-section h2 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  color: #111010; /* Red color */
+}
+
+
+
+
+
+/* sreach  */
+
+.search-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Change to flex-start to position items at the top */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 40px); /* Leave space for buttons */
+}
+
+.back-btn, .close-btn {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; /* Color for the buttons */
+}
+
+.search-heading {
+  margin: 0 20px; /* Space around the heading */
+  flex-grow: 1; /* Allow the heading to take available space */
+  text-align: center; /* Center the heading */
+}
+
+.search-input {
+  font-size: 20px;
+  width: 60%; /* Make the input wider */
+  padding: 15px; /* Increase padding for a larger area */
+  border: none;
+  border-bottom: 2px solid #333; /* Underline style */
+  outline: none; /* Remove default outline */
+  margin-top: 70px; /* Adjust margin to avoid overlap with the header */
+}
+
+.suggestions {
+  width: 60%; /* Match the width of the input */
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background: #fff; /* Background color of suggestions */
+  position: relative; /* Changed from absolute to relative */
+  z-index: 999; /* Ensure suggestions appear above other elements */
+  margin-top: 5px; /* Add some space between the input and suggestions */
+}
+
+.suggestions p {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions p:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.hidden {
+  display: none; /* Class to hide elements */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* wishlist add item  */
+
+.custom-wishlist-section {
+  width: 95%;
+  padding: 70px 50px;
+  margin-left: 30px;
+  margin-top: -30px;
+}
+
+.custom-wishlist-table {
+  width: 100%;
+  border-spacing: 0 10px; /* Creates gaps between rows without affecting borders */
+  margin-bottom: 60px;
+}
+
+.custom-wishlist-table th, .custom-wishlist-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #3b3838;
+}
+
+.custom-wishlist-table tr {
+  background-color: white; 
+  border: 1px solid #ddd; 
+}
+
+.custom-product-details {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.custom-remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.custom-remove-btn:hover {
+  color: black;
+}
+
+.custom-product-img {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px; /* Added space to accommodate remove button */
+}
+
+.custom-product-name {
+  font-size: 13px;
+  color: #474545;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.custom-product-price {
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.custom-current-price {
+  color: #000;
+}
+
+.custom-old-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #777;
+  margin-left: 10px;
+}
+
+.custom-product-stock {
+  font-size: 12px;
+  color: rgb(20, 20, 20);
+}
+
+.custom-select-options-btn {
+  background-color: white;
+  padding: 12px 60px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.custom-select-options-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.custom-wishlist-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.custom-share-link, .custom-share-wishlist {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.custom-wishlist-link {
+  margin-left: 10px;
+  color: rgb(72, 72, 78);
+  text-decoration: none;
+}
+
+.custom-wishlist-link:hover {
+  color: red;
+}
+
+
+
+.custom-social-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.custom-social-links li {
+  margin-left: 5px;
+}
+
+.custom-social-links li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.custom-social-links li a:hover {
+  color: red; /* Only color changes on hover */
+}
+
+
+
+
+
+
+/* filter button side bar  */
+
+ /* Container for the filter sidebar */
+ .filter-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  max-width: 300px;
+  height: 105%;
+  background-color: rgb(252, 249, 249);
+  /* box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1); */
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.cross-button {
+  font-size: 30px;
+  cursor: pointer;
+  color: #796b6b;
+  position: absolute;
+  top: 5px;
+  right: 17px;
+}
+
+.cross-button:hover {
+  color: #eb2121;
+}
+
+/* Headers for Categories and Price */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.filter-title {
+  font-size: 15px;
+}
+
+.toggle-btn {
+  color: #4d4a4a;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  color: red;
+}
+
+/* Filter Sections */
+.filter-section {
+  display: none;
+  padding: 15px 0;
+}
+
+.filter-section label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.filter-section a {
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+/* Only hover changes text color, not checkbox */
+.filter-section a:hover {
+  color: red;
+}
+
+/* Gap Between Sections */
+.section-gap {
+  margin-bottom: 30px;
+}
+
+/* Price Slider Section */
+.filter-section input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  outline: none;
+  /* opacity: 0.7; */
+  transition: opacity 0.2s;
+}
+
+/* Custom thumb style (round) for slider */
+.filter-section input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+
+.filter-section input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+}
+
+/* Left (Decrease) and Right (Increase) Labels */
+.slider-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.slider-container::before,
+.slider-container::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ddd;
+}
+
+.slider-container::before {
+  left: 0;
+  background-color: #271b1b; /* Decrease color */
+}
+
+.slider-container::after {
+  right: 0;
+  background-color: #a31515; /* Increase color */
+}
+
+/* Price Label */
+.filter-section p {
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Filter Button at Bottom */
+.filter-but {
+  font-size: 12px;
+  margin-top: 20px;
+  background-color: white;
+  color: rgb(37, 36, 36);
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Ensure no underline on the text */
+}
+
+.filter-but:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+/* cart.add  */
+.unique-cart-container {
+  width: 105%;
+  max-width: 1000px;
+  padding: 20px;
+  background-color: #fff;
+  
+}
+
+.unique-product-list {
+  width: 100%;
+}
+
+.unique-cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.unique-cart-header div {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.unique-cart-header .unique-product-title {
+  width: 50%;
+  font-size: 14px;
+}
+
+.unique-cart-header .unique-quantity-title {
+  width: 0%;
+  font-size: 14px;
+}
+
+/* Subtotal Heading Below */
+.unique-cart-header .unique-subtotal-title {
+  width: 25%;
+  margin-bottom: 25px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.unique-product-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+.unique-product-item:last-child {
+  border-bottom: none;
+}
+
+.unique-product-details {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.unique-remove-item {
+  cursor: pointer;
+  color: darkred;
+  font-size: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.unique-remove-item:hover {
+  color: red;
+}
+
+.unique-product-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.unique-product-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #494444;
+}
+
+.unique-product-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12%;
+  border: 1px solid #ccc; /* Single border for quantity */
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.unique-quantity-control {
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.unique-quantity-control:hover {
+  background-color: #e4dbdb;
+}
+
+.unique-quantity-display {
+  padding: 0 15px;
+}
+
+.unique-product-price {
+  width: 25%;
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  color: #201e1e;
+}
+
+
+
+/* cart total   */
+
+.checkout-container {
+  width: 420px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-top: 24px;
+}
+
+/* COUPON SECTION */
+.coupon-code-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.coupon-code-container:hover {
+  color: red;
+}
+
+.coupon-code-container .coupon-title {
+  font-weight: bold;
+}
+
+.coupon-input-wrapper {
+  max-height: 0; /* Start closed */
+  overflow: hidden; /* Hide overflowing content */
+  transition: max-height 0.3s ease-out; /* Smooth transition */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.coupon-input-wrapper.open {
+  max-height: 100px; /* Set a maximum height for the open state */
+}
+
+/* Set the coupon input and apply button on the same line */
+.coupon-input-wrapper .coupon-input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coupon-input-wrapper input {
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-right: none; /* Remove right border to merge with button */
+  border-radius: 1px 0 0 1px; /* Rounded corners */
+}
+
+.coupon-input-wrapper input:focus {
+  border: 1px solid black;
+  border-right: none; /* Maintain merge with button on focus */
+}
+
+/* Small Apply Button */
+.apply-button {
+  padding: 10px 35px;
+  font-size: 12px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 0 1px 1px 0; /* Rounded corners on right */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.apply-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.bor{
+  /* border: 1px solid #ccc; */
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* SUBTOTAL */
+.subtotal-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 13px;
+}
+
+.subtotal-section .subtotal-title {
+  font-weight: bold;
+}
+
+/* BORDER */
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* SHIPPING SECTION */
+.shipping-section {
+  margin-bottom: 20px;
+}
+
+.shipping-title {
+  font-weight: 580;
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.shipping-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.shipping-option input {
+  margin-right: 10px;
+}
+
+.shipping-option label {
+  font-size: 13px;
+}
+
+/* SHIPPING TO / ADDRESS SECTION */
+.shipping-to-container {
+  margin: 20px 0;
+}
+
+.shipping-to {
+  font-size: 12px;
+  text-align: left;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.change-address {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.change-address:hover {
+  color: red;
+}
+
+.address-inputs {
+  max-height: 0; /* Start closed */
+  overflow: hidden; /* Hide overflowing content */
+  transition: max-height 0.3s ease-out; /* Smooth transition */
+  margin-top: 10px;
+}
+
+.address-inputs.open {
+  max-height: 300px; /* Set a maximum height for the open state */
+}
+
+.address-inputs select,
+.address-inputs input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.address-inputs select:focus,
+.address-inputs input:focus {
+  border: 1px solid black;
+}
+
+.update-button {
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.update-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* TOTAL */
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-button {
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.checkout-button:hover {
+  background-color: red;
+}
+
+
+
+
+
+.cart-container {
+  display: flex;
+  justify-content: space-between; /* Space between the two sections */
+  padding: 20px; /* Add some padding around the container */
+}
+
+.left-section {
+  flex: 0 0 60%; /* Left section will take 60% of the container */
+  max-width: 90%; /* Optional max width */
+}
+
+.right-section {
+  flex: 0 0 35%; /* Right section will take 35% of the container */
+  max-width: 35%; /* Optional max width */
+}
+
+.gapss {
+  margin-bottom: 80px;
+}
+
+
+
+
+
+
+/* blogs content details section  */
+
+
+.clot-blog {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.clot-blog h2 {
+  font-size: 25px;
+  font-weight: 550;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+
+
+.unique-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: -51px;
+}
+.unique-content {
+  width: 70%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  margin-bottom: -20px;
+}
+.unique-content h1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.unique-content h2 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #131212;
+  margin-bottom: 12px;
+}
+
+
+.unique-content p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Top Tags Section */
+.unique-top-tags {
+  font-size: 13px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.unique-top-tags a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #555;
+}
+.unique-top-tags a:hover {
+  color: red;
+}
+
+/* Share Icon Section */
+
+.unique-top-tag{
+  font-size: 13px;
+  margin-right: 305px;
+}
+.unique-top-tag a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #555;
+}
+.unique-top-tag a:hover {
+  color: red;
+}
+
+.unique-share-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.unique-share {
+  display: flex;
+  align-items: center;
+}
+.unique-share span {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* Wrapper for both the share button and the social icons */
+.unique-share-icon-wrapper {
+  position: relative;
+  display: inline-block;  
+}
+
+/* Share button styling */
+.unique-share-icon {
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 2px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+/* Styling when hovering over the share button */
+.unique-share-icon:hover {
+  color: red;
+}
+
+/* Social icons container - hidden by default */
+.unique-social-icons {
+  display: none;
+  position: absolute;
+  top: 15px; 
+  left: -30px;
+  flex-direction: row;
+  gap: 8px;
+  background-color: white; 
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Social icon links */
+.unique-social-icons a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px; /* Icon size */
+  transition: color 0.3s;
+}
+
+/* Hover effect for social icon links */
+.unique-social-icons a:hover {
+  color: red;
+}
+
+/* Show social icons when hovering over either the share button or the social icons */
+.unique-share-icon-wrapper:hover .unique-social-icons {
+  display: flex;
+}
+
+
+/* Navigation Slider */
+.unique-nav-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
+}
+.unique-nav-slider h4 {
+  font-size: 18px;
+  color: #333232;
+  margin: 10px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.unique-nav-slider a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #333;
+  margin-top: 18px;
+  
+}
+.unique-nav-slider a:hover {
+  color: red;
+}
+
+
+
+/* Sidebar Section */
+.unique-sidebar {
+  margin-top: 10px;
+  width: 35%;
+  background-color: white;
+  padding: 0px;
+  /* border: 1px solid #ddd; */
+  box-sizing: border-box; /* Ensure padding and borders are included */
+  font-size: 14px;
+  margin-bottom: 30px; /* Ensure the box ends properly with 30px margin at the bottom */
+}
+
+.unique-sidebar h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Categories Section with Checkboxes */
+.unique-sidebar ul {
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #ddd; /* Add border */
+  padding-bottom: 20px; /* Add space for border */
+  margin-bottom: 20px; /* Ensure spacing between sections */
+  box-sizing: border-box; /* Ensure borders and padding are considered */
+}
+.unique-sidebar ul li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Prevent text overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent text from breaking onto a new line */
+  margin-top: 15px;
+}
+.unique-sidebar ul li input[type="checkbox"] {
+  margin-right: 10px;
+}
+.unique-sidebar ul li a {
+  text-decoration: none;
+  color: #333232;
+}
+.unique-sidebar ul li a:hover {
+  color: red;
+}
+
+/* Latest Posts with Image and Title on the Same Line */
+.unique-latest-posts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0; /* Padding for spacing */
+  border-bottom: 1px solid #ddd; /* Add border */
+  padding-bottom: 10px; /* Add space for border */
+  box-sizing: border-box; /* Ensure borders and padding are considered */
+}
+.unique-latest-posts img {
+  width: 80px;
+  height: 70px; /* Ensure image resizes proportionally */
+  margin-right: 12px;
+}
+.unique-latest-posts div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow the text container to grow as needed */
+}
+.unique-latest-posts h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+.unique-latest-posts h4 a {
+  text-decoration: none; /* Remove underline from the title */
+  color: inherit; /* Ensure the color is inherited from h4 */
+}
+.unique-latest-posts h4 a:hover {
+  color: red;
+}
+.unique-latest-posts span {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Search Bar */
+.unique-search-bar {
+  position: relative;
+  margin: 20px 0; /* Top and bottom margin */
+  display: flex;
+  justify-content: center; /* Center align the search bar */
+  border-bottom: 1px solid #ddd; /* Add border */
+  padding-bottom: 10px; /* Add space for border */
+  box-sizing: border-box; /* Ensure borders and padding are considered */
+}
+.unique-search-bar input {
+  width: 100%; /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  box-sizing: border-box; /* Include padding in width */
+  margin-bottom: 13px;
+}
+.unique-search-bar button {
+  position: absolute;
+  right: 10px;
+  top: 28%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.unique-search-bar button:before {
+  content: "\1F50D"; /* Unicode magnifying glass icon */
+  font-size: 18px;
+}
+.unique-search-bar button:hover {
+  color: red;
+}
+
+/* Tags Section */
+.unique-tags {
+  margin-top: 20px;
+}
+.unique-tags ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd; /* Add border */
+  padding-bottom: 10px; /* Add space for border */
+  box-sizing: border-box; /* Ensure borders and padding are considered */
+}
+.unique-tags ul li {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.unique-tags ul li a {
+  text-decoration: none;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent wrapping for long text */
+}
+.unique-tags ul li a:hover {
+  color: red;
+}
+
+
+
+
+
+
+/* checkout section  */
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Billing Details Styles */
+.billing-details {
+  width: 65%;
+  padding: 60px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  /* background-color: #f9f9f9;  */
+  margin-top: -55px;
+  font-size: 13px;
+}
+
+.billing-details h2 {
+  font-size: 18px;
+  font-weight: 500px;
+  margin-bottom: 35px;
+}
+
+.billing-details form label {
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
+
+.billing-details input[type="text"],
+.billing-details input[type="email"],
+.billing-details select,
+.billing-details textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.billing-details textarea {
+  resize: vertical;
+}
+
+/* Checkout Section Styles */
+.checkout-section {
+  width: 40%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px 5px 0px 0px;
+  /* background-color: #fff; */
+  margin-bottom: -20px;
+}
+
+.checkout-section h3,
+.checkout-section h4 {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.coupon-code button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px ;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.coupon-code button:hover {
+  background-color: red;
+}
+
+.coupon-code input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.coupon-code .apply-btn {
+  padding: 12px 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: -16px;
+}
+
+/* .order-summary .order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+} */
+
+.order-item{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.order-summary hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.order-summary .order-subtotal,
+.order-summary .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.order-summary .total {
+  font-weight: bold;
+}
+
+
+.shipping label {
+  display: block;
+  margin: 20px 0;
+}
+
+.payment-method label {
+  display: block;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.credit-card input {
+  width: 70%; /* Set a smaller width */
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin-top: -20px;
+}
+
+.credit-card .card-details input {
+  width: 30%; /* Adjusted width for Exp. Date and CVC inputs */
+  display: inline-block;
+  margin-right: 4%;
+}
+
+.terms label {
+  display: inline-block;
+}
+
+.check-para{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2e2c2c;
+}
+
+.terms label {
+  display: flex;
+  align-items: center; /* Vertically centers the checkbox and text */
+}
+
+.terms input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+.place-order-btn {
+  background-color: black;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.place-order-btn:hover {
+  background-color: red;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .billing-details,
+  .checkout-section {
+    width: 100%;
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+}
+
+
+
+
+
+
+
+
+/* prodcuts-details  */
+
+.container-products{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.product-images {
+  flex: 1;
+  margin-right: 20px;
+  position: relative;
+  margin-right: -30px;
+}
+
+.large-image img {
+  width: 550px; /* Fixed width */
+  height: 600px; /* Fixed height */
+  margin-top: -40px;
+  /* border: 1px solid black; */
+}
+
+/* Featured text on top left of the large image */
+.featured-text {
+  position: absolute;
+  font-size: 12px;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: rgb(82, 80, 80);
+  border: 1px solid black;
+  padding: 5px 20px;
+  font-weight: bold;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: -90px;
+  gap: 10px;
+  margin-right: 70px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: 1px solid rgb(189, 175, 175);
+ 
+  
+}
+
+.product-details {
+  flex: 1;
+  position: relative;
+  margin-top: 20px;
+}
+
+.product-details h1{
+  font-size: 24px;
+  font-weight: 500px;
+  margin-bottom: 30px;
+}
+
+.discount-price {
+  color: #000;
+  font-size: 20px;
+  padding: 0px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.discount-price span{
+  font-size: 15px;
+  color: #1d1c1c;
+}
+
+.discount {
+  font-size: 15px;
+  margin-right: 5px;
+  border: 1px solid red;
+  color: red;
+  padding: 4px 6px;
+ 
+}
+
+.original-price {
+
+  text-decoration: line-through;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  color: #5c5454;
+}
+
+.features .red-tick {
+  color: red;
+}
+
+.size-selection {
+  margin-top: 20px;
+}
+
+.size-btn {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.size-btn:hover {
+  border: 1px solid black;
+}
+
+/* Active size button when clicked */
+.size-btn.active {
+  border: 1px solid black;
+}
+
+.wishlist-share {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; /* Align items in the center */
+  font-size: 12px;
+  color: #615b5b;
+}
+
+.favorite-iconn {
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+
+.wishlist-text {
+  transition: color 0.3s;
+}
+
+.wishlist-text:hover {
+  color: red; /* Change color on hover */
+}
+
+.shipping-info {
+  background-color: rgb(233, 226, 226);
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 270px;
+}
+
+.boc1{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.boc2{
+  color: #4b4747;
+  font-size: 13px;
+}
+
+.shipping-info img {
+  width: 35px;
+  height: 40px;
+}
+
+.sku-tags {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: rgb(66, 63, 63);
+}
+
+.tags a {
+  text-decoration: none; /* Remove underline */
+  color: rgb(61, 57, 57); /* Change color to black */
+  font-size: 14px;
+}
+
+.tags a:hover {
+  color: red;
+}
+
+
+.category a {
+  font-size: 14px;
+  text-decoration: none; /* Remove underline */
+  color: rgb(75, 69, 69); /* Change color to black */
+}
+
+.category a:hover {
+  color: red;
+}
+
+.size-guide-link {
+  font-size: 13px;
+  text-decoration: none; /* Remove underline from size guide */
+  color: rgb(87, 81, 81); /* Change color to black */
+}
+
+.size-guide-link:hover {
+  color: red; /* Change color on hover */
+}
+
+/* Size Guide Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+.size-guide-image {
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* Container for both buttons */
+.checkout-buttons-container {
+  display: flex;
+  justify-content: space-between; /* Align buttons side by side with space between */
+  width: 100%; /* Adjust as needed */
+  margin-top: 20px;
+}
+
+/* Anchor tag styling */
+.checkout-link {
+  width: 48%; /* Ensures both buttons fit side by side */
+  text-decoration: none; /* Removes underline from the link */
+}
+
+/* First button */
+.checkout-button-pro {
+  width: 100%; /* Full width inside the link */
+  padding: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  margin-bottom: -5px;
+}
+
+.checkout-button-pro:hover {
+  background-color: red;
+}
+
+/* Second button */
+.checkout-button-produ {
+  width: 100%; /* Full width inside the link */
+  padding: 15px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid gray;
+  margin-bottom: -5px;
+}
+
+.checkout-button-produ:hover {
+  background-color: red;
+}
+
+
+
+
+.unique-product-quantity-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+  border: 1px solid #ccc; /* Single border for quantity */
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #302e2e;
+}
+
+
+
+/* product-details reveiw and decription section  */
+.borde{
+  border-bottom: 1px solid #000000;
+  margin-top: 50px;
+}
+
+
+/* Tab button styles */
+.tabs {
+  display: flex;
+  justify-content: center; /* Center the tabs */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  margin-top: 80px;
+}
+
+.tabs button {
+  background-color: white;
+  color: rgb(54, 53, 53);
+  padding: 14px 16px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.tabs button:hover {
+  background-color: #f1f1f1;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+/* Tab content styles */
+.tabcontent {
+  display: none;
+  padding: 2cqmin 80px;
+}
+
+.tabcontent h2 {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 23px;
+}
+
+.tabcontent p{
+  text-align: left;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #504d4d;
+}
+
+.tabcontent b {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.tabcontent strong {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #524e4e;
+}
+
+
+.tabcontent h3 {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tabcontent ul {
+  list-style-type: none;
+}
+
+.tabcontent ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tabcontent ul li::before {
+  content: "•";
+  color: red;
+  margin-right: 8px;
+}
+
+
+
+
+
+
+/* fotter inner pages  */
+
+.terms-full-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 50px; /* Padding inside the left and right border */
+  border-left: 1px solid #e0e0e0; /* Left border */
+  border-right: 1px solid #e0e0e0; /* Right border */
+  border-top: 1px solid #e0e0e0;
+  margin-top: -31px;
+}
+
+.terms-section {
+  padding: 20px 0; /* Padding only at the top and bottom */
+}
+
+.terms-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.terms{
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.terms-list {
+  list-style-type: none; /* Remove default bullet */
+  padding-left: 0;
+}
+
+.terms-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #312f2f;
+  padding-left: 20px; /* Ensure space between bullet and text */
+  text-indent: 0;
+  position: relative;
+  line-height: 1.5em; /* Set line height for better spacing */
+}
+
+.terms-item:before {
+  content: "• "; /* Custom bullet */
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px; /* Reserve space for the bullet */
+}
+
+.terms-bold {
+  color: #464343;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.head-para {
+  color: #464343;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.refund-para {
+  color: #464343;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.head-para-priv {
+  color: #464343;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
+
+/* order tracking  */
+
+/* Container with left and right borders */
+.order-tracking-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-left: 1px solid #e0e0e0; /* Left border */
+  border-right: 1px solid #e0e0e0; /* Right border */
+  text-align: center;
+  margin-top: -30px;
+}
+
+.order-tracking-text {
+  font-size: 14px;
+  color: #4a4a4a; /* Light gray text */
+  margin-bottom: 20px;
+  text-align: center; /* Center align the text */
+  line-height: 1.5em; /* Adjust line height for better readability */
+  word-wrap: break-word; /* Ensure long text breaks into multiple lines */
+  white-space: normal; /* Prevent text from extending in one long line */
+  width: 80%; /* Ensure text takes up full width */
+  max-width: 800px; /* Limit the width to avoid spreading too wide */
+  margin: 60px auto 50px auto; /* Center the container and add bottom margin */
+}
+
+
+
+/* Form layout */
+.order-tracking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align vertically in the center */
+  gap: 15px; 
+  margin-bottom: 60px;
+}
+
+.order-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.order-field label {
+  font-weight: 500;
+  font-size: 12px;
+  color: #272525;
+  margin-bottom: 5px;
+}
+
+.order-field input {
+  width: 250px;
+  height: 40px; /* Same height as button */
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  font-size: 11px;
+  box-sizing: border-box;
+}
+
+/* Track button */
+.track-button {
+  margin-top: 18px;
+  padding: 10px; /* Match padding with input fields */
+  border: 1px solid #e0e0e0;
+  width: 250px; /* Same width as input */
+  height: 40px; /* Same height as input */
+  font-size: 11px; /* Match the font-size with the input */
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box; /* Ensures consistent sizing with the input fields */
+}
+
+/* Hover effect */
+.track-button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .order-tracking-form {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .order-field input {
+      width: 100%;
+  }
+}
+
+
+
+
+/* faqs   */
+
+/* FAQ Section */
+.faq-section {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+/* FAQ Item */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-item:hover,
+.faq-item:active {
+  background-color: #f9f9f9;
+}
+
+.faq-item:hover .faq-question h3,
+.faq-item:active .faq-question h3 {
+  color: red; /* Change question text color on hover/touch */
+}
+
+.faq-item:hover .faq-icon,
+.faq-item:active .faq-icon {
+  color: red; /* Change icon color on hover/touch */
+}
+
+/* FAQ Question */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.faq-icon {
+  font-size: 24px;
+  color: #000;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* FAQ Answer (Hidden by default) */
+.faq-answer {
+  display: none;
+  padding-top: 15px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Open state for FAQ answer */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Rotate the icon when FAQ is active */
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+.custom-cart-container {
+  position: relative;
+}
+
+.custom-cart-receipt {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: -80px; /* Adjust to match the shopping cart icon */
+  right: 5px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ddd8d8;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* Cart item layout */
+.custom-cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.custom-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.custom-item-details p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Subtotal section */
+.custom-cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 15px 0;
+ font-size: 13px;
+}
+
+.custom-cart-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.custom-view-cart-button, .custom-checkout-button {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  color: #000;
+  font-size: 12px;
+}
+
+.custom-view-cart-button:hover, .custom-checkout-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Show cart receipt on hover */
+.custom-cart-container:hover .custom-cart-receipt {
+  display: block;
+}

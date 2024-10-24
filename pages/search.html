@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link rel="stylesheet" href="/assets/css/header&footer.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<section id="search">
+
+    <div class="search-section" id="searchSection">
+        <div class="header">
+            <div class="back-btn" onclick="goBack()">←</div>
+            <h2 class="search-heading">What Are You Looking For?</h2>
+        </div>
+        <input type="text" class="search-input" placeholder="Start typing..." oninput="searchProducts(this.value)" onfocus="showSuggestions()">
+        <div class="suggestions hidden" id="suggestions"></div>
+    </div>
+
+</section>
+    
+</body>
+
+<script>
+    // Simulating product data
+    const products = [
+        { name: 'Hoodie', link: '/pages/hoodies.html' },
+        { name: 'Tracksuit', link: '/pages/tracksuits.html' },
+        { name: 'T-Shirt', link: '/pages/tshirts.html' },
+        { name: 'Sweatshirt', link: '/pages/sweatshirts.html' },
+        { name: 'Sweatpants', link: '/pages/sweatpants.html' },
+        { name: 'Sweatsuits', link: '/pages/sweatsuits.html' },
+        { name: 'Shop', link: '/pages/shop.html' },
+        { name: 'Blog', link: '/pages/blog.html' },
+        { name: 'Wishlist', link: '/pages/wishlist.html' },
+        { name: 'Contact', link: '/pages/contact.html' },
+        { name: 'Cart', link: '/pages/cart.html' },
+        { name: 'Account', link: '/pages/myaccount.html' },
+        { name: 'Blog details', link: '/pages/blog-details.html' },
+        // Add more products with links
+    ];
+
+    const searchInput = document.querySelector('.search-input');
+    const suggestionsDiv = document.getElementById('suggestions');
+
+    // Boolean to track if the mouse is over the input or suggestions
+    let isMouseOverInputOrSuggestions = false;
+
+    // Function to display filtered product suggestions
+    function searchProducts(query) {
+        const lowerQuery = query.toLowerCase();
+        const filteredProducts = products.filter(product => 
+            product.name.toLowerCase().includes(lowerQuery)
+        );
+
+        // Display filtered product suggestions only if there is a match
+        if (filteredProducts.length && lowerQuery.length > 0) {
+            suggestionsDiv.innerHTML = filteredProducts.map(product => 
+                `<p onclick="window.location.href='${product.link}'">${product.name}</p>`
+            ).join('');
+            suggestionsDiv.classList.remove('hidden');
+        } else {
+            suggestionsDiv.classList.add('hidden'); // Hide suggestions if no matches
+        }
+    }
+
+    // Show suggestions when typing
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.trim(); // Use trim() to remove extra spaces
+        searchProducts(query);
+    });
+
+    // Mouse enter and leave events
+    searchInput.addEventListener('mouseenter', () => {
+        isMouseOverInputOrSuggestions = true;
+    });
+
+    suggestionsDiv.addEventListener('mouseenter', () => {
+        isMouseOverInputOrSuggestions = true;
+    });
+
+    searchInput.addEventListener('mouseleave', () => {
+        isMouseOverInputOrSuggestions = false;
+        setTimeout(hideSuggestions, 200);
+    });
+
+    suggestionsDiv.addEventListener('mouseleave', () => {
+        isMouseOverInputOrSuggestions = false;
+        setTimeout(hideSuggestions, 200);
+    });
+
+    // Function to hide suggestions if the mouse isn't over the input or suggestions
+    function hideSuggestions() {
+        if (!isMouseOverInputOrSuggestions) {
+            suggestionsDiv.classList.add('hidden');
+        }
+    }
+
+    // Close the search section
+    function closeSearch() {
+        const searchSection = document.getElementById('searchSection');
+        searchSection.style.display = 'none'; // Hides the entire search section
+    }
+
+    // Go back to the previous page
+    function goBack() {
+        window.history.back(); // Go back to the previous page in history
+    }
+
+    // Show suggestions when input is focused
+    searchInput.addEventListener('focus', () => {
+        const query = searchInput.value.trim();
+        searchProducts(query);
+    });
+</script>
+
+</html>

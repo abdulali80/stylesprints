@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link rel="stylesheet" href="/assets/css/header&footer.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <header class="main-header">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <p>ENHANCE YOUR SHOPPING EXPERIENCE: ENJOY FREE DELIVERY ON ORDERS OVER $200!</p>
+            </div>
+
+            <!-- Logo and Navigation -->
+            <div class="logo-and-nav">
+
+                <!-- Middle Bar -->
+                <div class="middle-bar">
+                    <p>BEST SPECIAL OFFERS! UPTO 40% OFF!</p>
+                </div>
+
+
+                <div class="logo">
+                    <img src="/assets/image/l1.png" alt=>
+                    <h1>SPIDER<span>CLOTHING</span></h1>
+                </div>
+
+                <!-- Icons -->
+                <div class="icons">
+                    <a href="/pages/myaccount.html"><i class="fa fa-user"></i></a>
+                    <a href="/pages/search.html"><i class="fa fa-search"></i></a>
+                    <a href="/pages/wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a href="/pages/cart.html" class="nav-link active"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/pages/shop.html">SHOP</a></li>
+                    <li><a href="/pages/hoodies.html">HOODIES</a></li>
+                    <li><a href="/pages/tracksuits.html">TRACKSUITS</a></li>
+                    <li><a href="/pages/tshirts.html">TSHIRTS</a></li>
+                    <li><a href="/pages/sweatsuit.html">SWEATSUIT</a></li>
+                    <li><a href="/pages/sweatshirts.html">SWEATSHIRTS</a></li>
+                    <li><a href="/pages/sweatpants.html">SWEATPANTS</a></li>
+                    <li><a href="/pages/blog.html">BLOG</a></li>
+                    <li><a href="/pages/contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+    <section id="shop article">
+    
+        <div class="filter">
+            <!-- <div class="breadcrumb-container">HOME &gt; SHOP</div> -->
+            <div class="crumb">
+                <a href="/index.html" class="crumb-link">HOME</a> &gt; 
+                <span class="crumb-text">CART</span>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="heading-cart">
+        <div class="clot-contact">
+            <h2>CART</h2>
+        </div>
+    </section>
+
+    <!-- <section id="add-cart-pro">
+        <div class="unique-cart-container">
+            <div class="unique-cart-header">
+                <div class="unique-product-title">Product</div>
+                <div class="unique-quantity-title">Quantity</div>
+                <div class="unique-subtotal-title">Subtotal</div>
+            </div>
+        
+            <div class="unique-product-list">
+                <div class="unique-product-item">
+                    <span class="unique-remove-item">x</span>
+                    <div class="unique-product-details">
+                        <img src="/assets/image/p17.webp" alt="Product 1" class="unique-product-image">
+                        <p class="unique-product-name">Sp5der Acai Hoodie Purple - L</p>
+                    </div>
+                    <div class="unique-product-quantity">
+                        <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'decrease', 160)">-</span>
+                        <span class="unique-quantity-display">1</span>
+                        <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'increase', 160)">+</span>
+                    </div>
+                    <p class="unique-product-price">$<span class="unique-item-subtotal">160.00</span></p>
+                </div>
+        
+                <div class="unique-product-item">
+                    <span class="unique-remove-item">x</span>
+                    <div class="unique-product-details">
+                        <img src="/assets/image/p27.webp" alt="Product 2" class="unique-product-image">
+                        <p class="unique-product-name">Sp5der OG Web Hoodie Black - M</p>
+                    </div>
+                    <div class="unique-product-quantity">
+                        <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'decrease', 165)">-</span>
+                        <span class="unique-quantity-display">1</span>
+                        <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'increase', 165)">+</span>
+                    </div>
+                    <p class="unique-product-price">$<span class="unique-item-subtotal">165.00</span></p>
+                </div>
+        
+                <div class="unique-product-item">
+                    <span class="unique-remove-item">x</span>
+                    <div class="unique-product-details">
+                        <img src="/assets/image/p77.webp" alt="Product 3" class="unique-product-image">
+                        <p class="unique-product-name">Brown Spider Hoodie 555 555 - M</p>
+                    </div>
+                    <div class="unique-product-quantity">
+                        <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'decrease', 160)">-</span>
+                        <span class="unique-quantity-display">1</span>
+                        <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'increase', 160)">+</span>
+                    </div>
+                    <p class="unique-product-price">$<span class="unique-item-subtotal">160.00</span></p>
+                </div>
+            </div>
+        </div>
+        
+    </section> -->
+
+    <div class="cart-container">
+        <section id="add-cart-pro" class="left-section">
+            <div class="unique-cart-container">
+                <div class="unique-cart-header">
+                    <div class="unique-product-title">Product</div>
+                    <div class="unique-quantity-title">Quantity</div>
+                    <div class="unique-subtotal-title">Subtotal</div>
+                </div>
+    
+                <div class="unique-product-list">
+                    <div class="unique-product-item">
+                        <span class="unique-remove-item">x</span>
+                        <div class="unique-product-details">
+                            <img src="/assets/image/p17.webp" alt="Product 1" class="unique-product-image">
+                            <p class="unique-product-name">Sp5der Acai Hoodie Purple - L</p>
+                        </div>
+                        <div class="unique-product-quantity">
+                            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'decrease', 160)">-</span>
+                            <span class="unique-quantity-display">1</span>
+                            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'increase', 160)">+</span>
+                        </div>
+                        <p class="unique-product-price">$<span class="unique-item-subtotal">160.00</span></p>
+                    </div>
+    
+                    <div class="unique-product-item">
+                        <span class="unique-remove-item">x</span>
+                        <div class="unique-product-details">
+                            <img src="/assets/image/p27.webp" alt="Product 2" class="unique-product-image">
+                            <p class="unique-product-name">Sp5der OG Web Hoodie Black - M</p>
+                        </div>
+                        <div class="unique-product-quantity">
+                            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'decrease', 165)">-</span>
+                            <span class="unique-quantity-display">1</span>
+                            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'increase', 165)">+</span>
+                        </div>
+                        <p class="unique-product-price">$<span class="unique-item-subtotal">165.00</span></p>
+                    </div>
+    
+                    <div class="unique-product-item">
+                        <span class="unique-remove-item">x</span>
+                        <div class="unique-product-details">
+                            <img src="/assets/image/p77.webp" alt="Product 3" class="unique-product-image">
+                            <p class="unique-product-name">Brown Spider Hoodie 555 555 - M</p>
+                        </div>
+                        <div class="unique-product-quantity">
+                            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'decrease', 160)">-</span>
+                            <span class="unique-quantity-display">1</span>
+                            <span class="unique-quantity-control" onclick="uniqueUpdateQuantity(this, 'increase', 160)">+</span>
+                        </div>
+                        <p class="unique-product-price">$<span class="unique-item-subtotal">160.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="cart-total" class="right-section">
+            <div class="checkout-container">
+                <!-- COUPON CODE -->
+                <div class="coupon-code-container" onclick="toggleCoupon()">
+                    <span class="coupon-title">Coupon Code</span>
+                    <span class="toggle-icon" id="toggle-icon">+</span>
+                </div>
+    
+                <div class="coupon-input-wrapper" id="coupon-input-wrapper">
+                    <div class="coupon-input-group">
+                        <input type="text" placeholder="Coupon code">
+                        <div class="apply-button">APPLY</div>
+                    </div>
+                </div>
+    
+                <div class="bor"></div>
+    
+                <!-- SUBTOTAL -->
+                <div class="subtotal-section">
+                    <span class="subtotal-title">SUBTOTAL</span>
+                    <span class="subtotal-price" id="subtotal-price">$325.00</span>
+                </div>
+    
+                <div class="divider"></div>
+    
+                <!-- SHIPPING -->
+                <div class="shipping-section">
+                    <span class="shipping-title">SHIPPING</span>
+    
+                    <div class="bor"></div>
+    
+                    <div class="shipping-option">
+                        <input type="radio" name="shipping" value="0" checked onclick="updateTotal(0)">
+                        <label>Free Shipping (14 to 20 Business Days)</label>
+                    </div>
+                    <div class="shipping-option">
+                        <input type="radio" name="shipping" value="36" onclick="updateTotal(36)">
+                        <label>Standard Shipping FedEx (14 to 20 Business Days):<b> $36.00</b></label>
+                    </div>
+                    <div class="shipping-option">
+                        <input type="radio" name="shipping" value="60" onclick="updateTotal(60)">
+                        <label>Express Shipping (FedEx) (12 to 15 Business Days):<b> $60.00</b></label>
+                    </div>
+                </div>
+    
+                <div class="bor"></div>
+    
+                <!-- SHIPPING TO -->
+                <div class="shipping-to-container">
+                    <div class="shipping-to">SHIPPING TO <b>NY</b></div>
+                    <div class="change-address" onclick="toggleAddress()">Change Address</div>
+                </div>
+    
+                <div class="address-inputs" id="address-inputs">
+                    <select name="country">
+                        <option value="us">United States (US)</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="in">India</option>
+                        <option value="au">Australia</option>
+                        <option value="de">Germany</option>
+                        <option value="fr">France</option>
+                        <option value="it">Italy</option>
+                        <option value="es">Spain</option>
+                        <option value="jp">Japan</option>
+                        <option value="cn">China</option>
+                        <option value="br">Brazil</option>
+                        <option value="mx">Mexico</option>
+                        <option value="za">South Africa</option>
+                        <option value="ru">Russia</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="sg">Singapore</option>
+                        <option value="kr">South Korea</option>
+                        <option value="se">Sweden</option>
+                        <option value="no">Norway</option>
+                        <option value="dk">Denmark</option>
+                        <option value="nl">Netherlands</option>
+                        <option value="pl">Poland</option>
+                        <option value="ch">Switzerland</option>
+                        <option value="ae">United Arab Emirates</option>
+                        <option value="hk">Hong Kong</option>
+                        <option value="th">Thailand</option>
+                        <option value="ph">Philippines</option>
+                        <option value="vn">Vietnam</option>
+                        <option value="id">Indonesia</option>
+                        <option value="my">Malaysia</option>
+                        <!-- Add more countries here -->
+                    </select>
+                    <select name="city">
+                        <option value="new_york">New York</option>
+                        <option value="los_angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="houston">Houston</option>
+                        <option value="miami">Miami</option>
+                        <option value="san_francisco">San Francisco</option>
+                        <option value="seattle">Seattle</option>
+                        <option value="boston">Boston</option>
+                        <option value="atlanta">Atlanta</option>
+                        <option value="phoenix">Phoenix</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="text" placeholder="Enter City (if not listed)" id="customCity">
+                    <input type="text" placeholder="ZIP Code">
+                    <div class="update-button">UPDATE</div>
+                </div>
+    
+                <div class="divider"></div>
+    
+                <!-- TOTAL -->
+                <div class="total-section">
+                    <span>Total</span>
+                    <span class="total-price" id="total-price">$325.00</span>
+                </div>
+    
+                <!-- CHECKOUT -->
+                <!-- <button class="checkout-button" >CHECKOUT</button> -->
+                <a href="/pages/checkout.html">
+                    <button class="checkout-button">CHECKOUT</button>
+                  </a>
+            </div>
+        </section>
+    </div>
+    
+    <section id="recent-products">
+
+        <div class="new-cloth">
+            <h2>Recently viewed products</h2>
+        </div>
+    
+    <div class="recently-viewed">
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p4.webp" alt="Product 1">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der 555 555 Black Hoodie</h3>
+                    <p class="discount">-42%</p>
+                    <p class="price">$150.00 <span>$250.00</span></p>
+                </div>
+            </div>
+    
+            
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p24.webp" alt="Product 2">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der White The Spot T-Shirt</h3>
+                    <p class="discount">-40%</p>
+                    <p class="price">$100.00 <span>$150.00</span></p>
+                </div>
+            </div>
+    
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p39.webp" alt="Product 3">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der White The Spot T-Shirt</h3>
+                    <p class="discount">-40%</p>
+                    <p class="price">$100.00 <span>$150.00</span></p>
+                </div>
+            </div>
+    
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p53.webp" alt="Product 4">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der White The Spot T-Shirt</h3>
+                    <p class="discount">-40%</p>
+                    <p class="price">$100.00 <span>$150.00</span></p>
+                </div>
+            </div>
+    
+            <div class="recent-produc">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">🤍</div> <!-- Empty heart icon -->
+                <img src="/assets/image/p17.webp" alt="Product 1">
+                <div class="rec-action">
+                    <button class="quick-view">Quick View</button>
+                    <button class="select-options">Select Options</button>
+                </div>
+                <div class="recen-info">
+                    <p class="pak">Latest Young Thug Spider Hoodie Collection 2024</p>
+                    <h3>Sp5der 555 555 Black Hoodie</h3>
+                    <p class="discount">-42%</p>
+                    <p class="price">$150.00 <span>$250.00</span></p>
+                </div>
+            </div>
+    
+            <!-- Add more product-box divs as needed -->
+        </div>
+    
+    </section>
+
+    <div class="gapss"></div>
+
+    <section id="footer">
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="newsletter-signup">
+                    <h4>SIGN UP TO GET 5% OFF YOUR FIRST ORDER AND STAY UP TO DATE ON THE LATEST PRODUCT RELEASES,
+                        SPECIAL OFFERS AND NEWS</h4>
+                    <form>
+                        <input type="email" placeholder="Your Email *" required />
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="/pages/footer-page/billing-terms.html">BILLING TERMS & CONDITION</a></li>
+                        <li><a href="/pages/footer-page/refund-policy.html">REFUND & RETURN POLICY</a></li>
+                        <li><a href="/pages/footer-page/shipping.html">SHIPPING INFORMATION</a></li>
+                        <li><a href="/pages/footer-page/terms&condition.html">TERMS & CONDITIONS</a></li>
+                        <li><a href="/pages/footer-page/privacy&policy.html">PRIVACY POLICY</a></li>
+                        <li><a href="/pages/footer-page/order-tracking.html">ORDER TRACKING</a></li>
+                        <li><a href="/pages/footer-page/faqs.html">FAQS</a></li>
+                    </ul>
+                </div>
+    
+                <div class="contact-info">
+                    <p>If you have any questions regarding your order, products or our service, please contact our
+                        customer service.</p>
+                    <p><strong>EMAIL:</strong> <a href="mailto:INFO@SPIDER.CLOTHING.US">INFO@SPIDER.CLOTHING.US</a></p>
+                </div>
+    
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+    
+                <div class="footer-bottom">
+                    <div class="payment-methods">
+                        <img src="/assets/image/f1.png" alt="Visa" />
+                        <img src="/assets/image/f2.png" alt="Mastercard" />
+                        <img src="/assets/image/f3.png" alt="Paypal" />
+                    </div>
+                    <p>&copy; 2024 Spider Clothing. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+    
+    </section>
+
+</body>
+
+ <script>
+    function uniqueUpdateQuantity(element, action, price) {
+        const quantityDisplay = element.parentNode.querySelector('.unique-quantity-display');
+        let currentQuantity = parseInt(quantityDisplay.textContent);
+        
+        if (action === 'increase') {
+            currentQuantity++;
+        } else if (action === 'decrease' && currentQuantity > 1) {
+            currentQuantity--;
+        }
+
+        quantityDisplay.textContent = currentQuantity;
+
+        const itemSubtotal = element.closest('.unique-product-item').querySelector('.unique-item-subtotal');
+        const updatedSubtotal = (currentQuantity * price).toFixed(2);
+        itemSubtotal.textContent = updatedSubtotal;
+    }
+</script> 
+
+ <script>
+    const baseSubtotal = 325.00;
+
+    
+    function toggleCoupon() {
+        const couponWrapper = document.getElementById('coupon-input-wrapper');
+        const toggleIcon = document.getElementById('toggle-icon');
+
+        couponWrapper.classList.toggle('open'); 
+
+       
+        toggleIcon.textContent = couponWrapper.classList.contains('open') ? '-' : '+';
+    }
+
+   
+    function toggleAddress() {
+        const addressInputs = document.getElementById('address-inputs');
+
+        addressInputs.classList.toggle('open'); 
+    }
+
+    
+    function updateTotal(shippingCost) {
+        const subtotalPrice = baseSubtotal; 
+        const totalPrice = subtotalPrice + parseFloat(shippingCost); 
+
+        
+        document.getElementById('total-price').textContent = `$${totalPrice.toFixed(2)}`;
+    }
+</script> 
+
+<script>
+
+    function toggleFavorite(element) {
+        if (element.textContent === "🤍") {
+            element.textContent = "❤️";
+            element.style.color = "red";
+        } else {
+            element.textContent = "🤍";
+            element.style.color = "";
+        }
+    }
+    
+    
+</script> 
+
+</html>
